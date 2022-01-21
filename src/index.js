@@ -5,25 +5,28 @@ const appointmentSectionTemplate = require('./assets/appointment-section/appoint
 const mobileNavbarTemplate = require('./assets/navbar/navbar-mobile.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.createElement('nav')
-    navbar.innerHTML = navbarTemplate({
+    function putTemplateToDOM(template, tag, className, options = {}) {
+        const temp = document.createElement(tag)
+        temp.innerHTML = template(options)
+        temp.classList.add(className)
+        document.body.appendChild(temp)
+    }
+
+    putTemplateToDOM(navbarTemplate, 'nav', 'navbar', {
         'navbar-links': {},
         'search-modal': {},
     })
-    navbar.classList.add('navbar')
-    document.body.appendChild(navbar)
 
-    const mobileNavbar = document.createElement('nav')
-    mobileNavbar.innerHTML = mobileNavbarTemplate({
+    putTemplateToDOM(mobileNavbarTemplate, 'nav', 'navbar-mobile', {
         'navbar-links': {},
     })
-    mobileNavbar.classList.add('navbar-mobile')
-    document.body.appendChild(mobileNavbar)
 
-    const appointmentSection = document.createElement('section')
-    appointmentSection.innerHTML = appointmentSectionTemplate({})
-    appointmentSection.classList.add('appointment-section')
-    document.body.appendChild(appointmentSection)
+    putTemplateToDOM(
+        appointmentSectionTemplate,
+        'section',
+        'appointment-section',
+        {}
+    )
 
     function toggleModal() {
         document.getElementById('search-modal').classList.toggle('show')
