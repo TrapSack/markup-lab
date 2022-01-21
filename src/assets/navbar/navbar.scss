@@ -1,0 +1,26 @@
+.navbar {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background: red;
+
+    .company-name {
+        margin-left: 190px;
+    }
+    .navbar-links {
+        margin-right: 180px;
+        display: flex;
+        width: 312px;
+        justify-content: space-between;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+}
