@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    @media screen and (max-width: 412px) {
+        flex-direction: column;
+    }
 }
 
 // .appointment-main {
@@ -55,6 +58,9 @@
             border: none;
             transition: 0.2s ease-in;
         }
+    }
+    @media screen and (max-width: 412px) {
+        display: none;
     }
 }
 

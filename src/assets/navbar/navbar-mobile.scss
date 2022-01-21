@@ -1,0 +1,63 @@
+.navbar-mobile {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    background-color: #252b42;
+    @media screen and (max-width: 412px) {
+        display: flex;
+    }
+    .top-menu-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .company-name-mobile {
+            color: #fff;
+            margin-left: 20px;
+        }
+
+        .btn-container-mobile {
+            width: 90px;
+            display: flex;
+            margin-right: 20px;
+            align-items: center;
+            justify-content: space-between;
+            .search-button-mobile {
+                background: url('img/search-icon-big.svg');
+                height: 24px;
+                width: 24px;
+                border: none;
+            }
+            .card-link-mobile {
+                background: url('img/card-icon-big.svg');
+                width: 24px;
+                height: 18px;
+            }
+            .menu-button {
+                background: url('img/menu-icon-small.svg');
+                width: 24px;
+                height: 14px;
+                border: none;
+            }
+        }
+    }
+    .link-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        justify-content: space-between;
+        height: 250px;
+        padding-bottom: 50px;
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    }
+    .show {
+        display: flex;
+    }
+}
