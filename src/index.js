@@ -1,9 +1,14 @@
-import './assets/styles.scss'
+import './components/styles.scss'
 
-const navbarTemplate = require('./assets/navbar/navbar.handlebars')
-const appointmentSectionTemplate = require('./assets/appointment-section/appointment-section.handlebars')
-const mobileNavbarTemplate = require('./assets/navbar/navbar-mobile.handlebars')
-const clientSignificanceTemplate = require('./assets/client-significance/client-significance.handlebars')
+const environmentalBenefitLogo = require('./components/img/environmental-benefit-logo.svg')
+const saveMoneyLogo = require('./components/img/save-money.svg')
+const travelAndAviationLogo = require('./components/img/travel.svg')
+
+
+const navbarTemplate = require('./components/navbar/navbar.handlebars')
+const appointmentSectionTemplate = require('./components/appointment-section/appointment-section.handlebars')
+const mobileNavbarTemplate = require('./components/navbar/navbar-mobile.handlebars')
+const clientSignificanceTemplate = require('./components/client-significance/client-significance.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
     function putTemplateToDOM(template, tag, className, options = {}) {
@@ -34,25 +39,53 @@ document.addEventListener('DOMContentLoaded', () => {
         'section',
         'client-significance-section',
         {
-            'benefitCardArray': [
+            benefitCardArray: [
                 {
-                    'backgroundURL':'img/environmental-benefit-logo.svg',
-                    'headerTitle':'Environmental',
-                    'benefits':[
+                    backgroundURL: environmentalBenefitLogo,
+                    headerTitle: 'Environmental',
+                    benefits: [
                         '- The best products start with Figma',
                         '- Design with real data',
                         '- Lightning fast prototyping',
                         '- Fastest way to organize',
-                        '- Work at the speed of thought.'
+                        '- Work at the speed of thought.',
                     ],
-                    'hrefURL':'#',
-            }
-            ]
+                    hrefURL: '#',
+                },
+                {
+                    backgroundURL: saveMoneyLogo,
+                    headerTitle: 'Save Money And Time',
+                    benefits: [
+                        '- The best products start with Figma',
+                        '- Design with real data',
+                        '- Lightning fast prototyping',
+                        '- Fastest way to organize',
+                        '- Work at the speed of thought.',
+                    ],
+                    hrefURL: '#',
+                },
+                {
+                    backgroundURL: travelAndAviationLogo,
+                    headerTitle: 'Save Money And Time',
+                    benefits: [
+                        '- The best products start with Figma',
+                        '- Design with real data',
+                        '- Lightning fast prototyping',
+                        '- Fastest way to organize',
+                        '- Work at the speed of thought.',
+                    ],
+                    hrefURL: '#',
+                },
+
+            ],
         }
     )
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.navbar')
-        if(document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
+        if (
+            document.body.scrollTop >= 100 ||
+            document.documentElement.scrollTop >= 100
+        ) {
             nav.classList.add('nav-colored')
         } else {
             nav.classList.remove('nav-colored')

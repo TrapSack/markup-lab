@@ -17,7 +17,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/assets/index.html',
+            template: './src/index.html',
         }),
         new webpack.HotModuleReplacementPlugin({
             cache: false,

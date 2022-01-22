@@ -16,11 +16,21 @@
 
         .significance-title-text {
             font-size: 40px;
+            @media screen and (max-width:412px) {
+                text-align: center;
+            }
         }
         .significance-title-description {
             width: 470px;
             font-size: 14px;
             text-align: center  ;
+            @media screen and (max-width:412px) {
+                width: 350px;
+            }
+        }
+        @media screen and (max-width:412px) {
+            width: 350px;
+            margin-bottom: 40px;
         }
     }
     .benefits-container {
@@ -28,5 +38,13 @@
         justify-content: space-between;
         padding-top: 80px;
         width: 80%;
+
+        @media screen and (max-width:412px) {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    @media screen and (max-width:412px) {
+        height: 1646px;
     }
 }

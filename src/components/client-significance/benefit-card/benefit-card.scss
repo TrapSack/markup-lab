@@ -50,4 +50,7 @@
             text-decoration: none;
         }
     }
+    @media screen and (max-width:412px) {
+        width: 312px;
+    }
 }
