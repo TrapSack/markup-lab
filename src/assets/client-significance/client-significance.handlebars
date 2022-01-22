@@ -1,8 +1,13 @@
 <div class='significance-title'>
-    <h1>Every Client Matters</h1>
-    <p>Problems trying to resolve the conflict between the two major realms of
+    <span class="significance-title-text">Every Client Matters</span>
+    <p class="significance-title-description">Problems trying to resolve the conflict between the two major realms of
         Classical physics: Newtonian mechanics</p>
 </div>
 <main class="benefits-container">
-
+    {{!-- {{#benefit-card}}{{>./benefit-card/benefit-card}}{{/benefit-card}}
+    {{#benefit-card}}{{>./benefit-card/benefit-card}}{{/benefit-card}}
+    {{#benefit-card}}{{>./benefit-card/benefit-card}}{{/benefit-card}} --}}
+    {{#each benefitCardArray}}
+     {{>./benefit-card/benefit-card}}
+    {{/each}}
 </main>

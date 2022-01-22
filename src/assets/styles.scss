@@ -1,4 +1,6 @@
 @use './appointment-section/appointment-section';
+@use './client-significance/benefit-card/benefit-card';
+@use './client-significance/client-significance.scss';
 @use './navbar/search-modal/search-modal-mobile';
 @use './navbar/navbar-mobile';
 @use './navbar/navbar';

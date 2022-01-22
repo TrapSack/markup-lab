@@ -32,6 +32,13 @@ module.exports = {
             {
                 test: /\.handlebars$/,
                 loader: 'handlebars-loader',
+                options: {
+                    inlineRequires: '/img/',
+                },
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ],
     },

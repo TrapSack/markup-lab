@@ -1,0 +1,19 @@
+<div class='benefit-card'>
+    <div class='benefit-card-header'>
+        <div class='benefit-card-header-logo' style="background: url({{backgroundURL}});">
+        </div>
+        <h1 class='benefit-card-header-title'>{{headerTitle}}</h1>
+    </div>
+    <ul class='benefit-description'>
+        {{!-- <li>- The best products start with Figma</li>
+        <li>- Design with real data</li>
+        <li>- Lightning fast prototyping</li>
+        <li>- Fastest way to organize</li>
+        <li>- Work at the speed of thought.</li> --}}
+        {{#each benefits}}
+        <li>{{this}}</li>
+        {{/each}}
+        <a href='{{hrefURL}}'>Learn more</a>
+    </ul>
+
+</div>

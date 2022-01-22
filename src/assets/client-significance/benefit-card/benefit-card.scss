@@ -1,0 +1,53 @@
+.benefit-card {
+    width: 30%;
+    height: 385px;
+    background-color: #D9EDFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .benefit-card-header {
+        display: flex;
+        align-items: center;
+        height: 132px;
+        width: 100%;
+        justify-content: center;
+        .benefit-card-header-logo {
+            height: 72px;
+            width: 72px;
+            // background: url(img/environmental-benefit-logo.svg);
+        }
+
+        .benefit-card-header-title {
+            margin-left: 15px;
+            color:#252B42;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .benefit-description {
+        list-style: none            ;
+        padding-left: 0;
+        height: 180px;
+        padding-top: 33px;
+        padding-bottom: 40px;
+        background: white;
+        margin: 0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: bold;
+        font-size: 14px;
+        width: 100%;
+        li {
+            margin-left: 50px;
+            color:#737373;
+        }
+        a{
+            margin-left: 50px;
+            color:#0D5C63;
+            text-decoration: none;
+        }
+    }
+}

@@ -33,7 +33,22 @@ document.addEventListener('DOMContentLoaded', () => {
         clientSignificanceTemplate,
         'section',
         'client-significance-section',
-        {}
+        {
+            'benefitCardArray': [
+                {
+                    'backgroundURL':'img/environmental-benefit-logo.svg',
+                    'headerTitle':'Environmental',
+                    'benefits':[
+                        '- The best products start with Figma',
+                        '- Design with real data',
+                        '- Lightning fast prototyping',
+                        '- Fastest way to organize',
+                        '- Work at the speed of thought.'
+                    ],
+                    'hrefURL':'#',
+            }
+            ]
+        }
     )
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.navbar')
