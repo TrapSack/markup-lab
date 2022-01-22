@@ -1,5 +1,5 @@
-@use './team-section/team-section';
 @use './appointment-section/appointment-section';
+@use './navbar/search-modal/search-modal-mobile';
 @use './navbar/navbar-mobile';
 @use './navbar/navbar';
 @use './navbar/search-modal/search-modal';
@@ -11,5 +11,6 @@ body {
     background-color: #252b42;
     font-family: 'Montserrat', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
