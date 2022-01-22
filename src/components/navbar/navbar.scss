@@ -28,6 +28,7 @@
         font-size: 14px;
     }
     .link-container {
+        font-weight: bold;
         font-size: 14px;
         width: 300px;
         display: flex;
@@ -35,7 +36,7 @@
     }
 
     .search-button {
-        background: url('img/search-icon-small.svg');
+        background: url('img/navbar/search-icon-small.svg');
         height: 16px;
         width: 16px;
         border: none;
@@ -44,7 +45,7 @@
     }
 
     .card-link {
-        background: url('img/card-icon-small.svg');
+        background: url('img/navbar/card-icon-small.svg');
         height: 12px;
         width: 16px;
     }

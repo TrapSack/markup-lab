@@ -1,0 +1,48 @@
+.who-we-are-section {
+    height: 759px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 50%, rgba(37,43,66,1) 50%);
+    @media screen and (max-width:412px) {
+        height: 900px;
+    }
+    .who-we-are-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color:white;
+        font-weight: bold;
+         .who-we-are-title-text {
+             font-size: 40px;
+         }
+         .who-we-are-title-description {
+             text-align: center;
+             font-size: 14px;
+             width: 70%;
+         }
+        
+    }
+
+    .who-we-are-video {
+        margin-top: 70px;
+        background: url("img/about-us/who-we-are-video-preview.jpg");
+        background-size: 1100px;
+        height: 442px;
+        width: 877px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .who-we-are-video-play {
+            border: none;
+            background: url("img/about-us/who-we-are-video-play.svg");
+            height: 99px;
+            width: 99px;
+            cursor: pointer;
+        }
+        @media screen and (max-width:412px) {
+            width: 302px;
+        }
+    }
+}

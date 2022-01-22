@@ -1,0 +1,41 @@
+.worker-card{
+    width: 30%;
+    height: 373px;
+    background: #fff;
+    .worker-photo {
+        width:100%;
+        height: 60%;
+        background-size: contain;
+    }
+    .worker-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40%;
+        justify-content: center;
+    }
+    .worker-contacts {
+        display: flex;
+        height: 30px;
+        width: 102px;
+        justify-content: space-between;
+        .worker-contact {
+            height: 24px;
+            width: 24px;
+            text-decoration: none;
+        }
+        #facebook {
+            background: url('img/our-team/contact-logos/facebook.svg');
+        }
+        #insta {
+            background: url('img/our-team/contact-logos/insta.svg');
+        }
+        #twitter {
+            background: url('img/our-team/contact-logos/twitter.svg');
+            height: 20px;
+        }
+    }
+    @media screen and (max-width:412px) {
+        width: 328px;
+    }
+}

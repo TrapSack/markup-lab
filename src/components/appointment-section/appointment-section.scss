@@ -2,7 +2,7 @@
     height: 823px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('img/appointment-section-background.png') no-repeat;
+        url('img/appointment-section/appointment-section-background.png') no-repeat;
     display: flex;
     background-position: center;
     justify-content: center;
@@ -113,8 +113,10 @@
     .booking-option-select {
         width: 244px;
         height: 50px;
+        padding: 0 20px;
         border-radius: 5px;
         border: 1px solid #bdbdbd;
+        background:#fff ;
     }
     background-color: #fff;
     h2 {

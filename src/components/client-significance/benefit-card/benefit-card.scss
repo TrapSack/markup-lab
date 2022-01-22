@@ -29,8 +29,8 @@
         list-style: none            ;
         padding-left: 0;
         height: 180px;
-        padding-top: 33px;
-        padding-bottom: 40px;
+        // padding-top: 33px;
+       
         background: white;
         margin: 0;
         border-radius: 10px;
@@ -39,9 +39,11 @@
         justify-content: space-between;
         font-weight: bold;
         font-size: 14px;
-        width: 100%;
+        width: 80%;
+        padding: 10%;
+        padding-bottom: 42px;
         li {
-            margin-left: 50px;
+
             color:#737373;
         }
         a{

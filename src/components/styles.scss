@@ -1,9 +1,14 @@
 @use './appointment-section/appointment-section';
+@use './reviews-section/review-card/review-card';
+@use './our-team/our-team-section';
+@use './our-team/worker-card/worker-card';
+@use './reviews-section/reviews-section';
 @use './client-significance/benefit-card/benefit-card';
 @use './client-significance/client-significance.scss';
 @use './navbar/search-modal/search-modal-mobile';
 @use './navbar/navbar-mobile';
 @use './navbar/navbar';
+@use './about-us/who-we-are-section';
 @use './navbar/search-modal/search-modal';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 

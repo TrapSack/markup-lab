@@ -1,40 +1,48 @@
 import './components/styles.scss'
 
-const environmentalBenefitLogo = require('./components/img/environmental-benefit-logo.svg')
-const saveMoneyLogo = require('./components/img/save-money.svg')
-const travelAndAviationLogo = require('./components/img/travel.svg')
-
+const environmentalBenefitLogo = require('./components/img/client-significance/environmental-benefit-logo.svg')
+const saveMoneyLogo = require('./components/img/client-significance/save-money.svg')
+const travelAndAviationLogo = require('./components/img/client-significance/travel.svg')
+const reviewerPhoto1 = require('./components/img/review-section/reviewer1.png')
+const workerPhoto1 = require('./components/img/our-team/worker-photo1.png')
+const workerPhoto2 = require('./components/img/our-team/worker-photo2.png')
+const workerPhoto3 = require('./components/img/our-team/worker-photo3.png')
 
 const navbarTemplate = require('./components/navbar/navbar.handlebars')
 const appointmentSectionTemplate = require('./components/appointment-section/appointment-section.handlebars')
 const mobileNavbarTemplate = require('./components/navbar/navbar-mobile.handlebars')
 const clientSignificanceTemplate = require('./components/client-significance/client-significance.handlebars')
+const whoWeAreTemplate = require('./components/about-us/who-we-are-section.handlebars')
+const reviewsSectionTemplate = require('./components/reviews-section/reviews-section.handlebars')
+const ourTeamSectionTemplate = require('./components/our-team/our-team-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
-    function putTemplateToDOM(template, tag, className, options = {}) {
+    function putTemplateInDOM(template, tag, className, options = {}) {
         const temp = document.createElement(tag)
         temp.innerHTML = template(options)
         temp.classList.add(className)
         document.body.appendChild(temp)
     }
 
-    putTemplateToDOM(navbarTemplate, 'nav', 'navbar', {
+    putTemplateInDOM(navbarTemplate, 'nav', 'navbar', {
         'navbar-links': {},
         'search-modal': {},
     })
 
-    putTemplateToDOM(mobileNavbarTemplate, 'nav', 'navbar-mobile', {
+    putTemplateInDOM(mobileNavbarTemplate, 'nav', 'navbar-mobile', {
         'navbar-links': {},
         'search-modal-mobile': {},
     })
 
-    putTemplateToDOM(
+    putTemplateInDOM(
         appointmentSectionTemplate,
         'section',
         'appointment-section',
-        {}
+        {
+            'appointment-booking-form': {},
+        }
     )
-    putTemplateToDOM(
+    putTemplateInDOM(
         clientSignificanceTemplate,
         'section',
         'client-significance-section',
@@ -76,10 +84,66 @@ document.addEventListener('DOMContentLoaded', () => {
                     ],
                     hrefURL: '#',
                 },
-
             ],
         }
     )
+
+    putTemplateInDOM(whoWeAreTemplate, 'section', 'who-we-are-section', {
+        'who-we-are-video': {},
+    })
+
+    putTemplateInDOM(reviewsSectionTemplate, 'section', 'reviews-section', {
+        reviews: [
+            {
+                reviewText:
+                    'Slate helps you see how many  more days you need to work to reach your financial goal',
+                reviewer: {
+                    profileURL: reviewerPhoto1,
+                    name: 'Regina Miles',
+                    profession: 'Designer',
+                },
+            },
+            {
+                reviewText:
+                    'Slate helps you see how many  more days you need to work to reach your financial goal',
+                reviewer: {
+                    profileURL: reviewerPhoto1,
+                    name: 'Regina Miles',
+                    profession: 'Designer',
+                },
+            },
+            {
+                reviewText:
+                    'Slate helps you see how many  more days you need to work to reach your financial goal',
+                reviewer: {
+                    profileURL: reviewerPhoto1,
+                    name: 'Regina Miles',
+                    profession: 'Designer',
+                },
+            },
+        ],
+    })
+
+    putTemplateInDOM(ourTeamSectionTemplate, 'section', 'our-team-section', {
+        workers: [
+            {
+                photoURL: workerPhoto1,
+                name: 'Avie Beaton',
+                position: 'CO Founder',
+            },
+            {
+                photoURL: workerPhoto2,
+                name: 'Ben Jonson',
+                position: 'Consultant',
+            },
+            {
+                photoURL: workerPhoto3,
+                name: 'Ashley Fletcher',
+                position: 'CEO',
+            },
+        ],
+    })
+
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.navbar')
         if (
