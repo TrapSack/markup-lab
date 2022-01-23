@@ -1,4 +1,4 @@
-.who-we-are-section {
+.about-us-section {
     height: 759px;
     width: 100%;
     display: flex;
@@ -8,16 +8,16 @@
     @media screen and (max-width:412px) {
         height: 900px;
     }
-    .who-we-are-title {
+    .about-us-title {
         display: flex;
         flex-direction: column;
         align-items: center;
         color:white;
         font-weight: bold;
-         .who-we-are-title-text {
+         .about-us-title-text {
              font-size: 40px;
          }
-         .who-we-are-title-description {
+         .about-us-title-description {
              text-align: center;
              font-size: 14px;
              width: 70%;
@@ -25,18 +25,18 @@
         
     }
 
-    .who-we-are-video {
+    .about-us-video {
         margin-top: 70px;
-        background: url("img/about-us/who-we-are-video-preview.jpg");
+        background: url("img/about-us/about-us-video-preview.jpg");
         background-size: 1100px;
         height: 442px;
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        .who-we-are-video-play {
+        .about-us-video-play {
             border: none;
-            background: url("img/about-us/who-we-are-video-play.svg");
+            background: url("img/about-us/about-us-video-play.svg");
             height: 99px;
             width: 99px;
             cursor: pointer;

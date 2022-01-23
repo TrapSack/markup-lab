@@ -11,12 +11,13 @@ const workerPhoto3 = require('./components/img/our-team/worker-photo3.png')
 const navbarTemplate = require('./components/navbar/navbar.handlebars')
 const appointmentSectionTemplate = require('./components/appointment-section/appointment-section.handlebars')
 const mobileNavbarTemplate = require('./components/navbar/navbar-mobile.handlebars')
-const clientSignificanceTemplate = require('./components/client-significance/client-significance.handlebars')
-const whoWeAreTemplate = require('./components/about-us/who-we-are-section.handlebars')
-const reviewsSectionTemplate = require('./components/reviews-section/reviews-section.handlebars')
+const clientSignificanceSectionTemplate = require('./components/client-significance/client-significance.handlebars')
+const aboutUsSectionTemplate = require('./components/about-us/about-us-section.handlebars')
+const reviewsSectionTemplate = require('./components/reviews/reviews-section.handlebars')
 const ourTeamSectionTemplate = require('./components/our-team/our-team-section.handlebars')
 const contactUsTemplate = require('./components/contact-us/contact-us-section.handlebars')
-const lighthouseSectionTemplate = require('./components/lighthouse/lighthouse-section.handlebars')
+const lighthouseSectionTemplate = require('./components/lighthouse/lighthouse.handlebars')
+const footerSectionTemplate = require('./components/footer/footer-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
     function putTemplateInDOM(template, tag, className, options = {}) {
@@ -45,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     )
     putTemplateInDOM(
-        clientSignificanceTemplate,
+        clientSignificanceSectionTemplate,
         'section',
         'client-significance-section',
         {
@@ -90,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     )
 
-    putTemplateInDOM(whoWeAreTemplate, 'section', 'who-we-are-section', {
-        'who-we-are-video': {},
+    putTemplateInDOM(aboutUsSectionTemplate, 'section', 'about-us-section', {
+        'about-us-video': {},
     })
 
     putTemplateInDOM(reviewsSectionTemplate, 'section', 'reviews-section', {
@@ -145,15 +146,17 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
     })
+   
 
     putTemplateInDOM(contactUsTemplate, 'section', 'contact-us-section', {
         'contact-form': '',
     })
+    
 
     putTemplateInDOM(
-        lighthouseSectionTemplate,
+        footerSectionTemplate,
         'section',
-        'lighthouse-section',
+        'footer-section',
         {
             linkColArray: [
                 {
@@ -196,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     )
 
+    putTemplateInDOM(lighthouseSectionTemplate,'footer','lighthouse',{})
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.navbar')
         if (
