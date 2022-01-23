@@ -13,7 +13,6 @@
         height: 103px;
         flex-direction: column;
         align-items: center;
-
         .significance-title-text {
             font-size: 40px;
             @media screen and (max-width:412px) {
@@ -25,11 +24,11 @@
             font-size: 14px;
             text-align: center  ;
             @media screen and (max-width:412px) {
-                width: 350px;
+                width: 80%;
             }
         }
         @media screen and (max-width:412px) {
-            width: 350px;
+            width: 80%;
             margin-bottom: 40px;
         }
     }

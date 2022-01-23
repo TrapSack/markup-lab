@@ -15,6 +15,7 @@ const clientSignificanceTemplate = require('./components/client-significance/cli
 const whoWeAreTemplate = require('./components/about-us/who-we-are-section.handlebars')
 const reviewsSectionTemplate = require('./components/reviews-section/reviews-section.handlebars')
 const ourTeamSectionTemplate = require('./components/our-team/our-team-section.handlebars')
+const contactUsTemplate = require('./components/contact-us/contact-us-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
     function putTemplateInDOM(template, tag, className, options = {}) {
@@ -142,6 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 position: 'CEO',
             },
         ],
+    })
+
+    putTemplateInDOM(contactUsTemplate,'section','contact-us-section',{
+        'contact-form':''
     })
 
     window.onscroll = function navBackgroundOnScroll() {

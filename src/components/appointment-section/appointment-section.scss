@@ -2,25 +2,21 @@
     height: 823px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('img/appointment-section/appointment-section-background.png') no-repeat;
+        url('img/appointment-section/appointment-section-background.png')
+            no-repeat;
     display: flex;
     background-position: center;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 820px){
         margin-top: 0;
         flex-direction: column;
+        align-items: center;
         height: 1500px;
         background-size: 3300px;
     }
 }
-
-// .appointment-main {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-// }
 
 .quote-getting-container {
     margin-right: 200px;
@@ -71,6 +67,7 @@
         flex-direction: column;
         align-items: center;
         margin-right: 0;
+        width: 80%;
         h1 {
             text-align: center;
             font-weight: 5000;
@@ -85,6 +82,9 @@
             text-align: center;
             width: 260px;
             font-size: 20px;
+            @media screen and (max-width: 412px) {
+                width: 100%;
+            }
         }
     }
 }
@@ -96,27 +96,39 @@
     margin-top: 100px;
     border-radius: 10px;
     padding: 43px;
-    .booking-option-text {
-        font-weight: bold;
-        font-size: 14px;
+    @media screen and (max-width: 412px) {
+        width: 70%;
     }
+    .booking-option {
+        width: 100%;
+        .booking-option-text {
+            font-weight: bold;
+            font-size: 14px;
+        }
 
-    .booking-option-input {
-        font-weight: bold;
-        width: 202px;
-        height: 28px;
-        border-radius: 5px;
-        border: 1px solid #bdbdbd;
-        padding: 11px 21px;
-    }
+        .booking-option-input {
+            font-weight: bold;
+            width: 202px;
+            height: 28px;
+            border-radius: 5px;
+            border: 1px solid #bdbdbd;
+            padding: 11px 21px;
+            @media screen and (max-width: 412px) {
+                width: 85%;
+            }
+        }
 
-    .booking-option-select {
-        width: 244px;
-        height: 50px;
-        padding: 0 20px;
-        border-radius: 5px;
-        border: 1px solid #bdbdbd;
-        background:#fff ;
+        .booking-option-select {
+            width: 244px;
+            height: 50px;
+            padding: 0 20px;
+            border-radius: 5px;
+            border: 1px solid #bdbdbd;
+            background: #fff;
+            @media screen and (max-width: 412px) {
+                width: 100%;
+            }
+        }
     }
     background-color: #fff;
     h2 {
@@ -135,6 +147,9 @@
         &:hover {
             background: #ffb654;
             transition: 0.2s ease-in;
+        }
+        @media screen and (max-width: 412px) {
+            width: 100%;
         }
     }
 }
