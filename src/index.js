@@ -16,6 +16,7 @@ const whoWeAreTemplate = require('./components/about-us/who-we-are-section.handl
 const reviewsSectionTemplate = require('./components/reviews-section/reviews-section.handlebars')
 const ourTeamSectionTemplate = require('./components/our-team/our-team-section.handlebars')
 const contactUsTemplate = require('./components/contact-us/contact-us-section.handlebars')
+const lighthouseSectionTemplate = require('./components/lighthouse/lighthouse-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
     function putTemplateInDOM(template, tag, className, options = {}) {
@@ -145,9 +146,55 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
     })
 
-    putTemplateInDOM(contactUsTemplate,'section','contact-us-section',{
-        'contact-form':''
+    putTemplateInDOM(contactUsTemplate, 'section', 'contact-us-section', {
+        'contact-form': '',
     })
+
+    putTemplateInDOM(
+        lighthouseSectionTemplate,
+        'section',
+        'lighthouse-section',
+        {
+            linkColArray: [
+                {
+                    colName: 'Company Info',
+                    linkElements: [
+                        'About Us',
+                        'Carrier',
+                        'We are hiring',
+                        'Blog',
+                    ],
+                },
+                {
+                    colName: 'Legal',
+                    linkElements: [
+                        'About Us',
+                        'Carrier',
+                        'We are hiring',
+                        'Blog',
+                    ],
+                },
+                {
+                    colName: 'Features',
+                    linkElements: [
+                        'Business Marketing',
+                        'User Analytic',
+                        'Live Chat',
+                        'Unlimited Support',
+                    ],
+                },
+                {
+                    colName: 'Resources',
+                    linkElements: [
+                        'IOS & Android',
+                        'Watch a Demo',
+                        'Customers',
+                        'API',
+                    ],
+                },
+            ],
+        }
+    )
 
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.navbar')
