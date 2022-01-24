@@ -12,24 +12,8 @@
     @media screen and (max-width: 412px) {
         min-height: 900px;
     }
-    .about-us-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        font-weight: bold;
-        .about-us-title-text {
-            font-size: 40px;
-        }
-        .about-us-title-description {
-            text-align: center;
-            font-size: 14px;
-            width: 70%;
-        }
-    }
 
     .about-us-video {
-        margin-top: 20px;
         background-size: 1100px;
         height: 400px;
         width: 50%;

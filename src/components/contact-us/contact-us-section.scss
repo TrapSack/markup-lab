@@ -164,7 +164,7 @@ $text-color: #252b42;
         }
         .bottom-title-text {
             color: #737373;
-            font-weight: normal;
+            font-weight: 500;
             @media screen and (max-width: 412px) {
                 text-align: center;
             }
@@ -175,7 +175,7 @@ $text-color: #252b42;
             color: $light-text-color;
             border: none;
             height: 58px;
-            width: 240px;
+            width: 200px;
             border-radius: 5px;
             padding: 15px, 40px;
             font-weight: bold;

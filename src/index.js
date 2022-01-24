@@ -1,6 +1,5 @@
 import './components/styles.scss'
 
-// const videojs = require('video.js')
 
 const environmentalBenefitLogo = require('./components/img/client-significance/environmental-benefit-logo.svg')
 const saveMoneyLogo = require('./components/img/client-significance/save-money.svg')
@@ -20,11 +19,7 @@ const contactUsTemplate = require('./components/contact-us/contact-us-section.ha
 const footerSectionTemplate = require('./components/footer/footer-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
-    // const player = videojs('vid1',{
-    //     breakpoints:{
-    //         medium:500
-    //     }
-    // })
+
     function putTemplateInDOM(template, tag, className, options = {}) {
         const temp = document.createElement(tag)
         temp.innerHTML = template(options)
@@ -36,11 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'navbar-links': {},
         'search-modal': {},
     })
-
-    // putTemplateInDOM(mobileNavbarTemplate, 'nav', 'navbar-mobile', {
-    //     'navbar-links': {},
-    //     'search-modal-mobile': {},
-    // })
 
     putTemplateInDOM(
         appointmentSectionTemplate,
@@ -190,11 +180,13 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.header-section')
         if (
-            document.body.scrollTop >= 100 ||
-            document.documentElement.scrollTop >= 100
+            document.body.scrollTop >= 50 ||
+            document.documentElement.scrollTop >= 50
         ) {
             nav.classList.add('header-colored')
+            nav.classList.remove('header-transparent')
         } else {
+            nav.classList.add('header-transparent')
             nav.classList.remove('header-colored')
         }
     }

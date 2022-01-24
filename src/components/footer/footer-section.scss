@@ -104,7 +104,7 @@ $text-color: #252b42;
             }
             .subscription-bottom-text {
                 font-size: 12px;
-                font-weight: bold;
+                font-weight: 500;
                 color: #bdbdbd;
             }
             .subscription-email {
@@ -148,6 +148,8 @@ $text-color: #252b42;
         position: relative;
         clear: both;
         background: #17213c;
+        font-size: 14px;
+        font-weight: 600;
         .footer-bottom-text-container {
             width: 70%;
         }
