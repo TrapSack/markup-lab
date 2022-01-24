@@ -83,6 +83,9 @@
                 color: #bdbdbd;
                 text-decoration: none;
                 font-weight: bold;
+                &:hover {
+                    color: #cecece;
+                }
             }
         }
         .subscription {
