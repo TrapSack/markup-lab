@@ -1,5 +1,7 @@
 import './components/styles.scss'
 
+// const videojs = require('video.js')
+
 const environmentalBenefitLogo = require('./components/img/client-significance/environmental-benefit-logo.svg')
 const saveMoneyLogo = require('./components/img/client-significance/save-money.svg')
 const travelAndAviationLogo = require('./components/img/client-significance/travel.svg')
@@ -18,6 +20,11 @@ const contactUsTemplate = require('./components/contact-us/contact-us-section.ha
 const footerSectionTemplate = require('./components/footer/footer-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
+    // const player = videojs('vid1',{
+    //     breakpoints:{
+    //         medium:500
+    //     }
+    // })
     function putTemplateInDOM(template, tag, className, options = {}) {
         const temp = document.createElement(tag)
         temp.innerHTML = template(options)
