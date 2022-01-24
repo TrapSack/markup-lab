@@ -1,13 +1,11 @@
-<div class='significance-title'>
-    <span class="significance-title-text">Every Client Matters</span>
-    <p class="significance-title-description">Problems trying to resolve the conflict between the two major realms of
-        Classical physics: Newtonian mechanics</p>
-</div>
-<main class="benefits-container">
-    {{!-- {{#benefit-card}}{{>./benefit-card/benefit-card}}{{/benefit-card}}
-    {{#benefit-card}}{{>./benefit-card/benefit-card}}{{/benefit-card}}
-    {{#benefit-card}}{{>./benefit-card/benefit-card}}{{/benefit-card}} --}}
+
+{{>../public/title titleText = "Every Client Matters" titleDesctiption = "Problems trying to resolve the conflict between the two major realms of
+        Classical physics: Newtonian mechanics"}}
+{{!-- change tag --}}
+{{!-- add flex wrap --}}
+{{!-- add min height --}}
+<div class="benefits-container"> 
     {{#each benefitCardArray}}
      {{>./benefit-card/benefit-card}}
     {{/each}}
-</main>
+</div>

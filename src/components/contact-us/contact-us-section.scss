@@ -1,23 +1,29 @@
+$primary-color: #ff7b47;
+$secondary-color: #ffb654;
+$muted-color: #bdbdbd;
+$second-text-color: #737373;
+$light-text-color: #ffffff;
+$text-color: #252b42;
+
 .contact-us-section {
-    height: 821px;
+    display: flex;
+    flex-direction: column;
+    min-height: 821px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url('img/contact-us/cover.png');
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     @media screen and (max-width: 412px) {
-        height: 1200px;
+        min-height: 1200px;
     }
     .contact-form-title {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-top: 90px;
         margin-bottom: 40px;
-        color: white;
+        color: $light-text-color;
         font-weight: bold;
-        margin-left: 30px;
+        margin-left: 200px;
         @media screen and (max-width: 412px) {
             align-items: flex-start;
         }
@@ -31,17 +37,16 @@
         }
     }
     .contact-us-form {
-        width: 601px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 601px;
         margin-left: 200px;
-        margin-top: 115px;
         @media screen and (max-width: 612px) {
+            align-items: center;
             width: 100%;
             margin: 0;
             margin-top: 100px;
-            align-items: center;
         }
         @media screen and (max-width: 820px) {
             margin-left: 0;
@@ -52,24 +57,29 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            height: 150px;
+            min-height: 150px;
             @media screen and (max-width: 612px) {
                 flex-direction: column;
-                height: 250px;
                 flex-wrap: nowrap;
+                height: 250px;
             }
             .booking-option-input {
                 font-weight: bold;
                 width: 242px;
                 height: 28px;
                 border-radius: 5px;
-                border: 1px solid #bdbdbd;
+                background: #f9f9f9;
+                border: 1px solid $muted-color;
                 padding: 11px 21px;
+
                 &:focus {
                     outline: none;
                 }
                 @media screen and (max-width: 613px) {
                     width: 70%;
+                }
+                &::placeholder {
+                    color: $muted-color;
                 }
             }
 
@@ -78,8 +88,10 @@
                 height: 50px;
                 padding: 0 20px;
                 border-radius: 5px;
-                border: 1px solid #bdbdbd;
-                background: #fff;
+                border: 1px solid $muted-color;
+                color: $muted-color;
+                font-weight: bold;
+                background: #f9f9f9;
                 &:focus {
                     outline: none;
                 }
@@ -96,7 +108,12 @@
             max-height: 100px;
             padding: 20px;
             border: none;
+            background: #f9f9f9;
             border-radius: 5px;
+            &::placeholder {
+                font-weight: bold;
+                color: $muted-color;
+            }
             &:focus {
                 outline: none;
             }
@@ -110,7 +127,7 @@
 
         .appointment-submit-btn {
             margin-top: 40px;
-            background: #ff7b47;
+            background: $primary-color;
             color: white;
             border: none;
             height: 58px;
@@ -119,37 +136,40 @@
             padding: 15px, 40px;
             font-weight: bold;
             &:hover {
-                background: #ffb654;
+                background: $secondary-color;
                 transition: 0.2s ease-in;
             }
         }
     }
 
-    .contact-us-footer {
-        width: 100%;
-        height: 140px;
-        background: #fff;
+    .contact-us-bottom {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-top: 100px;
+        width: 100%;
+        height: 140px;
+        background: #fff;
         @media screen and (max-width: 412px) {
             flex-direction: column;
             height: 300px;
         }
-        .footer-title-main {
+        .bottom-title-main {
             @media screen and (max-width: 412px) {
                 text-align: center;
             }
         }
-        .footer-title-text {
+        .bottom-title-text {
+            color: #737373;
+            font-weight: normal;
             @media screen and (max-width: 412px) {
                 text-align: center;
             }
         }
 
         .contact-btn {
-            background: #ff7b47;
-            color: white;
+            background: $primary-color;
+            color: $light-text-color;
             border: none;
             height: 58px;
             width: 240px;
@@ -157,7 +177,7 @@
             padding: 15px, 40px;
             font-weight: bold;
             &:hover {
-                background: #ffb654;
+                background: $secondary-color;
                 transition: 0.2s ease-in;
             }
         }

@@ -1,19 +1,26 @@
+$primary-color: #ff7b47;
+$secondary-color: #ffb654;
+$muted-color: #bdbdbd;
+$second-text-color: #737373;
+$light-text-color: #ffffff;
+$text-color: #252b42;
+
 .footer-section {
-    height: 500px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500px;
+    width: 100%;
     @media screen and (max-width: 412px) {
         height: 1100px;
     }
     .footer-title {
         display: flex;
-        width: 60%;
         justify-content: space-between;
         align-items: center;
+        width: 60%;
         height: 142px;
-        color: white;
+        color: $light-text-color;
         font-weight: bold;
         @media screen and (max-width: 412px) {
             flex-direction: column;
@@ -21,9 +28,9 @@
         }
         .social-media-container {
             display: flex;
-            width: 15%;
             justify-content: space-between;
             align-items: center;
+            width: 15%;
             @media screen and (max-width: 412px) {
                 width: 70%;
             }
@@ -37,7 +44,6 @@
                 background: url('img/footer/insta.svg');
                 height: 24px;
                 width: 24px;
-
                 fill: #335bf5;
             }
             #twitter {
@@ -76,7 +82,7 @@
             height: 170px;
             .container-title {
                 font-weight: bold;
-                color: white;
+                color: $light-text-color;
             }
             .link-element {
                 font-size: 14px;
@@ -103,10 +109,10 @@
             }
             .subscription-email {
                 display: flex;
+                align-items: center;
                 background: #fff;
                 height: 60px;
                 border-radius: 5px;
-                align-items: center;
                 .email-input {
                     width: 55%;
                     height: 50%;
@@ -121,27 +127,27 @@
                     height: 100%;
                     width: 45%;
                     border: none;
-                    background: #ff7b47;
+                    background: $primary-color;
                     border-radius: 0 5px 5px 0;
                     color: white;
                     font-size: 14px;
                     &:hover {
-                        background: #ffb654;
+                        background: $secondary-color;
                     }
                 }
             }
         }
     }
     .footer-bottom {
-        background: #17213c;
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 70px;
         margin-top: 100px;
-        color: white;
-        display: flex;
+        color: $light-text-color;
         position: relative;
         clear: both;
-        justify-content: center;
+        background: #17213c;
         .footer-bottom-text-container {
             width: 70%;
         }

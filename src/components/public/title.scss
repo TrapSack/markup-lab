@@ -1,0 +1,24 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin: 50px 0 0 0;
+    color: white;
+    .title-text {
+        font-size: 40px;
+        @media screen and (max-width: 412px) {
+            text-align: center;
+        }
+    }
+    .title-description {
+        width: 60%;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+        letter-spacing: 0.2px;
+        @media screen and (max-width: 412px) {
+            width: 80%;
+        }
+    }
+}

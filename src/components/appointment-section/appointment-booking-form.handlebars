@@ -1,7 +1,9 @@
 <form class='appointment-booking-form'>
     <h2>Book Appointment</h2>
         <div class='booking-option'>
-            <p class='booking-option-text'>Name*</p>
+            {{!-- Label --}}
+            <label class='booking-option-text'>Name*</label>
+            <br>
             <input
                 type='text'
                 class='booking-option-input'
@@ -9,15 +11,18 @@
             />
         </div>
         <div class='booking-option'>
-            <p class='booking-option-text'>Email*</p>
+            {{!-- type = email complete --}}
+            <label class='booking-option-text'>Email*</label>
+            <br>
             <input
-                type='text'
+                type='email' required
                 class='booking-option-input'
                 placeholder='example@gmail.com'
             />
         </div>
         <div class='booking-option'>
-            <p class='booking-option-text'>Department*</p>
+            <label class='booking-option-text'>Department*</label>
+            <br>
             <select
                 type='text'
                 class='booking-option-select'
@@ -27,7 +32,8 @@
             </select>
         </div>
         <div class='booking-option'>
-            <p class='booking-option-text'>Time*</p>
+            <label class='booking-option-text'>Time*</label>
+            <br>
             <select
                 type='text'
                 class='booking-option-select'

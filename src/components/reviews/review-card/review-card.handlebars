@@ -8,9 +8,11 @@
             class='reviewer-photo'
             style='background: url({{reviewer.profileURL}});background-size: cover;'
         ></div>
-        <div class='reviewer-data'>
+        {{!--  all card is a href --}}
+        <div class='reviewer-info'>
             <a href="#" class='reviewer-name'>{{reviewer.name}}</a>
-            <strong class='reviewer-profession'>{{reviewer.profession}}</strong>
+            {{!-- remove strong to span --}}
+            <strong class='reviewer-profession'>{{reviewer.profession}}</strong> 
         </div>
     </div>
 </div>  

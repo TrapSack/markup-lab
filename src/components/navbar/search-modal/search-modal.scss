@@ -19,49 +19,64 @@
 
 /* Modal Content/Box */
 .modal-content {
+    display: flex;
+    flex-direction: column;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     height: 150px;
     border: 1px solid #888;
+    border-radius: 5px;
     width: 40%; /* Could be more or less, depending on screen size */
     transition: 2s ease-in;
 }
-.search-input {
-    font-weight: bold;
-    width: 80%;
-    height: 28px;
-    border-radius: 5px;
-    border: 1px solid #bdbdbd;
-    padding: 11px 21px;
-}
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
+.search-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .modal-title {
+    }
+    .search-form-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .modal-close-button {
+            background: none;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            &:hover {
+                color: #bdbdbd;
+            }
+        }
+    }
+    .input-container {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #bdbdbd;
+        padding: 5px;
+        .search-input {
+            padding: 10px;
+            height: 10px;
+            width: 80%;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .search-submit {
+        background: url('img/navbar/modal-search-icon.svg');
+        border: none;
+        height: 30px;
+        width: 30px;
 
-.search-submit {
-    margin-top: 40px;
-    background: #ff7b47;
-    color: white;
-    border: none;
-    height: 58px;
-    width: 240px;
-    border-radius: 5px;
-    padding: 15px, 40px;
-    &:hover {
-        background: #ffb654;
-        transition: 0.2s ease-in;
+        &:hover {
+            // background: #ffb654;
+            transition: 0.2s ease-in;
+        }
     }
 }

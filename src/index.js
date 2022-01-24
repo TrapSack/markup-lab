@@ -8,9 +8,8 @@ const workerPhoto1 = require('./components/img/our-team/worker-photo1.png')
 const workerPhoto2 = require('./components/img/our-team/worker-photo2.png')
 const workerPhoto3 = require('./components/img/our-team/worker-photo3.png')
 
-const navbarTemplate = require('./components/navbar/navbar.handlebars')
+const headerTemplate = require('./components/navbar/header.handlebars')
 const appointmentSectionTemplate = require('./components/appointment-section/appointment-section.handlebars')
-const mobileNavbarTemplate = require('./components/navbar/navbar-mobile.handlebars')
 const clientSignificanceSectionTemplate = require('./components/client-significance/client-significance.handlebars')
 const aboutUsSectionTemplate = require('./components/about-us/about-us-section.handlebars')
 const reviewsSectionTemplate = require('./components/reviews/reviews-section.handlebars')
@@ -26,15 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(temp)
     }
 
-    putTemplateInDOM(navbarTemplate, 'nav', 'navbar', {
+    putTemplateInDOM(headerTemplate, 'header', 'header-section', {
         'navbar-links': {},
         'search-modal': {},
     })
 
-    putTemplateInDOM(mobileNavbarTemplate, 'nav', 'navbar-mobile', {
-        'navbar-links': {},
-        'search-modal-mobile': {},
-    })
+    // putTemplateInDOM(mobileNavbarTemplate, 'nav', 'navbar-mobile', {
+    //     'navbar-links': {},
+    //     'search-modal-mobile': {},
+    // })
 
     putTemplateInDOM(
         appointmentSectionTemplate,
@@ -182,14 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     window.onscroll = function navBackgroundOnScroll() {
-        const nav = document.querySelector('.navbar')
+        const nav = document.querySelector('.header-section')
         if (
             document.body.scrollTop >= 100 ||
             document.documentElement.scrollTop >= 100
         ) {
-            nav.classList.add('nav-colored')
+            nav.classList.add('header-colored')
         } else {
-            nav.classList.remove('nav-colored')
+            nav.classList.remove('header-colored')
         }
     }
 

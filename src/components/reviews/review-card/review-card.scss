@@ -1,9 +1,10 @@
 .review-card {
     height: 212px;
-    width: 23%;
-    padding: 32px;
+    width: 327px;
     border-radius: 5px;
     background: #fff;
+    padding: 32px;
+    margin-top: 30px;
     @media screen and (max-width: 412px) {
         width: 80%;
         height: 180px;
@@ -14,7 +15,7 @@
 
         .rating-stars {
             height: 22px;
-            width: 110px;  
+            width: 110px;
             background: url('img/review-section/stars.svg');
         }
     }
@@ -32,11 +33,11 @@
             width: 50px;
             // background: url('img/reviewer1.png');
             background-size: contain;
-        }   
-        .reviewer-data {
-            margin-left: 15px;
+        }
+        .reviewer-info {
             display: flex;
             flex-direction: column;
+            margin-left: 15px;
 
             .reviewer-name {
                 font-weight: bold;
@@ -44,6 +45,7 @@
                 text-decoration: none;
             }
             .reviewer-profession {
+                margin-top: 5px;
                 font-size: 14px;
             }
         }

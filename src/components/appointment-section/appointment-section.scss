@@ -1,14 +1,22 @@
+$primary-color: #ff7b47;
+$secondary-color: #ffb654;
+$muted-color: #bdbdbd;
+$second-text-color: #737373;
+$light-text-color: #ffffff;
+$text-color: #252b42;
+
 .appointment-section {
-    height: 823px;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('img/appointment-section/appointment-section-background.png')
-            no-repeat;
     display: flex;
     background-position: center;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('img/appointment-section/appointment-section-background.png')
+            no-repeat;
     flex-direction: row;
+    min-height: 823px;
+    width: 100%;
+    background-size: cover;
     @media screen and (max-width: 820px) {
         margin-top: 0;
         flex-direction: column;
@@ -26,6 +34,11 @@
         font-weight: 5000;
         font-size: 58px;
     }
+    > h4 {
+        font-size: 20px;
+        width: 360px;
+        font-weight: normal;
+    }
 
     .get-quote-btn {
         font-weight: 700;
@@ -35,10 +48,10 @@
         height: 48px;
         border-radius: 37px;
         padding: 10px, 36px;
-        background: #ff7b47;
+        background: $primary-color;
         border: none;
         &:hover {
-            background: #ffb654;
+            background: $secondary-color;
 
             transition: 0.2s ease-in;
         }
@@ -54,7 +67,7 @@
         font-size: 14px;
         color: white;
         &:hover {
-            background: #ffb654;
+            background: $secondary-color;
             border: none;
             transition: 0.2s ease-in;
         }
@@ -93,28 +106,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     margin-top: 100px;
     border-radius: 10px;
-    padding: 43px;
+    padding: 20px 43px 43px 43px;
     @media screen and (max-width: 412px) {
         width: 70%;
     }
     .booking-option {
+        margin-top: 10px;
         width: 100%;
+
         .booking-option-text {
             font-weight: bold;
             font-size: 14px;
         }
 
         .booking-option-input {
-            font-weight: bold;
+            margin-top: 15px;
+            font-weight: 600;
             width: 202px;
             height: 28px;
             border-radius: 5px;
-            border: 1px solid #bdbdbd;
+            border: 1px solid $muted-color;
             padding: 11px 21px;
+            background: #f9f9f9;
             @media screen and (max-width: 412px) {
                 width: 85%;
+            }
+            &::placeholder {
+                color: $second-text-color;
             }
             &:focus {
                 outline: none;
@@ -122,12 +143,15 @@
         }
 
         .booking-option-select {
+            margin-top: 15px;
             width: 244px;
             height: 50px;
             padding: 0 20px;
             border-radius: 5px;
-            border: 1px solid #bdbdbd;
-            background: #fff;
+            font-weight: bold;
+            border: 1px solid $muted-color;
+            color: $second-text-color;
+            background: #f9f9f9;
             @media screen and (max-width: 412px) {
                 width: 100%;
             }
@@ -140,15 +164,16 @@
 
     .appointment-submit-btn {
         margin-top: 40px;
-        background: #ff7b47;
+        background: $primary-color;
         color: white;
         border: none;
         height: 58px;
         width: 240px;
         border-radius: 5px;
+        font-weight: bold;
         padding: 15px, 40px;
         &:hover {
-            background: #ffb654;
+            background: $secondary-color;
             transition: 0.2s ease-in;
         }
         @media screen and (max-width: 412px) {

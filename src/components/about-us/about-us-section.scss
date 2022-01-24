@@ -1,47 +1,42 @@
 .about-us-section {
-    height: 759px;
+    min-height: 759px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(0deg, rgba(0,0,0,0.5) 50%, rgba(37,43,66,1) 50%);
-    @media screen and (max-width:412px) {
-        height: 900px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(37, 43, 66, 1) 50%
+    );
+    @media screen and (max-width: 412px) {
+        min-height: 900px;
     }
     .about-us-title {
         display: flex;
         flex-direction: column;
         align-items: center;
-        color:white;
+        color: white;
         font-weight: bold;
-         .about-us-title-text {
-             font-size: 40px;
-         }
-         .about-us-title-description {
-             text-align: center;
-             font-size: 14px;
-             width: 70%;
-         }
-        
+        .about-us-title-text {
+            font-size: 40px;
+        }
+        .about-us-title-description {
+            text-align: center;
+            font-size: 14px;
+            width: 70%;
+        }
     }
 
     .about-us-video {
-        margin-top: 70px;
-        background: url("img/about-us/about-us-video-preview.jpg");
+        margin-top: 20px;
         background-size: 1100px;
         height: 442px;
         width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        .about-us-video-play {
-            border: none;
-            background: url("img/about-us/about-us-video-play.svg");
-            height: 99px;
-            width: 99px;
-            cursor: pointer;
-        }
-        @media screen and (max-width:412px) {
+        @media screen and (max-width: 412px) {
             width: 80%;
         }
     }

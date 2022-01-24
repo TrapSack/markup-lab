@@ -1,76 +1,94 @@
-.navbar {
-    color: white;
+$primary-color: #ff7b47;
+$secondary-color: #ffb654;
+$muted-color: #bdbdbd;
+$second-text-color: #737373;
+$light-text-color: #ffffff;
+$text-color: #252b42;
+.header-section {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 1440px;
     position: fixed;
-    width: 100%;
-
-    .company-name {
-        @media screen and (min-width: 1440px) {
-            margin-left: 250px;
-        }
-    }
-    .navbar-links {
-        margin-left: 450px;
-        display: flex;
-        width: 338px;
-        justify-content: space-between;
-
-        @media screen and (min-width: 1440px) {
-            margin-right: 250px;
-        }
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 14px;
-        &:hover {
-            color: #bdbdbd;
-        }
-    }
-    .link-container {
+    color: white;
+    height: 60px;
+    > .company-name {
+        font-size: 24px;
         font-weight: bold;
-        font-size: 14px;
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
+        margin-left: 2%;
+    }
+    @media screen and(max-width:412px) {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        background-color: #252b42;
+        > .company-name {
+            display: none;
+        }
+        justify-content: space-around;
     }
 
-    .search-button {
-        background: url('img/navbar/search-icon-small.svg');
-        height: 16px;
-        width: 16px;
-        border: none;
-        margin-right: 5px;
-        cursor: pointer;
-    }
-
-    .card-link {
-        background: url('img/navbar/card-icon-small.svg');
-        height: 12px;
-        width: 16px;
-    }
-    .btn-container-desktop {
-        margin-left: 20px;
+    .navbar {
         display: flex;
-        width: 60px;
-        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: $light-text-color;
+
+        .navbar-links {
+            display: flex;
+            justify-content: space-between;
+            width: 338px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            &:hover {
+                color: $muted-color;
+            }
+        }
+        .link-container {
+            font-weight: bold;
+            font-size: 14px;
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .search-button {
+            background: url('img/navbar/search-icon-small.svg');
+            height: 16px;
+            width: 16px;
+            border: none;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .card-link {
+            background: url('img/navbar/card-icon-small.svg');
+            height: 15px;
+            width: 16px;
+        }
+        .btn-container-desktop {
+            margin-left: 20px;
+            display: flex;
+            width: 60px;
+            justify-content: space-between;
+            @media screen and (max-width: 412px) {
+                display: none;
+            }
+        }
+        .menu-button {
+            display: none;
+        }
         @media screen and (max-width: 412px) {
             display: none;
         }
     }
-    .menu-button {
-        display: none;
-    }
-    @media screen and (max-width: 412px) {
-        display: none;
-    }
 }
-
-.nav-colored {
+.header-colored {
     background-color: #252b42;
     transition: 0.2s ease-in;
 }

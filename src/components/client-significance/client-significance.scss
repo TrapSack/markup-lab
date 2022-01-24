@@ -1,33 +1,33 @@
 .client-significance-section {
-    height: 732px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 732px;
+    width: 100%;
 
     .significance-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-weight: bold;
         padding-top: 80px;
         color: white;
-        display: flex;
         height: 103px;
-        flex-direction: column;
-        align-items: center;
         .significance-title-text {
             font-size: 40px;
-            @media screen and (max-width:412px) {
+            @media screen and (max-width: 412px) {
                 text-align: center;
             }
         }
         .significance-title-description {
             width: 470px;
             font-size: 14px;
-            text-align: center  ;
-            @media screen and (max-width:412px) {
+            text-align: center;
+            @media screen and (max-width: 412px) {
                 width: 80%;
             }
         }
-        @media screen and (max-width:412px) {
+        @media screen and (max-width: 412px) {
             width: 80%;
             margin-bottom: 40px;
         }
@@ -35,15 +35,16 @@
     .benefits-container {
         display: flex;
         justify-content: space-between;
-        padding-top: 80px;
+        align-items: flex-start;
+        flex-wrap: wrap;
         width: 80%;
 
-        @media screen and (max-width:412px) {
+        @media screen and (max-width: 412px) {
             flex-direction: column;
             height: 100%;
         }
     }
-    @media screen and (max-width:412px) {
+    @media screen and (max-width: 412px) {
         height: 1646px;
     }
 }

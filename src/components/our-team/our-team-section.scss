@@ -1,17 +1,17 @@
 .our-team-section {
-    height: 750px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 750px;
+    width: 100%;
     @media screen and (max-width: 412px) {
-        height: 1600px;
+        min-height: 1600px;
     }
     .our-team-title {
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 50px;
         color: white;
         font-weight: bold;
         .our-team-title-text {
@@ -25,13 +25,13 @@
         }
     }
     .worker-cards-container {
-        margin-top: 80px;
-        width: 80%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        width: 80%;
         @media screen and (max-width: 412px) {
-            height: 1200px;
             flex-direction: column;
+            min-height: 1200px;
         }
     }
 }
