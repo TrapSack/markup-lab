@@ -16,7 +16,6 @@ const aboutUsSectionTemplate = require('./components/about-us/about-us-section.h
 const reviewsSectionTemplate = require('./components/reviews/reviews-section.handlebars')
 const ourTeamSectionTemplate = require('./components/our-team/our-team-section.handlebars')
 const contactUsTemplate = require('./components/contact-us/contact-us-section.handlebars')
-const lighthouseSectionTemplate = require('./components/lighthouse/lighthouse.handlebars')
 const footerSectionTemplate = require('./components/footer/footer-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -146,60 +145,42 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         ],
     })
-   
 
     putTemplateInDOM(contactUsTemplate, 'section', 'contact-us-section', {
         'contact-form': '',
     })
-    
 
-    putTemplateInDOM(
-        footerSectionTemplate,
-        'section',
-        'footer-section',
-        {
-            linkColArray: [
-                {
-                    colName: 'Company Info',
-                    linkElements: [
-                        'About Us',
-                        'Carrier',
-                        'We are hiring',
-                        'Blog',
-                    ],
-                },
-                {
-                    colName: 'Legal',
-                    linkElements: [
-                        'About Us',
-                        'Carrier',
-                        'We are hiring',
-                        'Blog',
-                    ],
-                },
-                {
-                    colName: 'Features',
-                    linkElements: [
-                        'Business Marketing',
-                        'User Analytic',
-                        'Live Chat',
-                        'Unlimited Support',
-                    ],
-                },
-                {
-                    colName: 'Resources',
-                    linkElements: [
-                        'IOS & Android',
-                        'Watch a Demo',
-                        'Customers',
-                        'API',
-                    ],
-                },
-            ],
-        }
-    )
+    putTemplateInDOM(footerSectionTemplate, 'section', 'footer-section', {
+        linkColArray: [
+            {
+                colName: 'Company Info',
+                linkElements: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+            },
+            {
+                colName: 'Legal',
+                linkElements: ['About Us', 'Carrier', 'We are hiring', 'Blog'],
+            },
+            {
+                colName: 'Features',
+                linkElements: [
+                    'Business Marketing',
+                    'User Analytic',
+                    'Live Chat',
+                    'Unlimited Support',
+                ],
+            },
+            {
+                colName: 'Resources',
+                linkElements: [
+                    'IOS & Android',
+                    'Watch a Demo',
+                    'Customers',
+                    'API',
+                ],
+            },
+        ],
+    })
 
-    putTemplateInDOM(lighthouseSectionTemplate,'footer','lighthouse',{})
     window.onscroll = function navBackgroundOnScroll() {
         const nav = document.querySelector('.navbar')
         if (
