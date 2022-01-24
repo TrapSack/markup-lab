@@ -31,7 +31,7 @@
     .about-us-video {
         margin-top: 20px;
         background-size: 1100px;
-        height: 442px;
+        height: 400px;
         width: 50%;
         display: flex;
         justify-content: center;
@@ -39,13 +39,20 @@
         @media screen and (max-width: 412px) {
             width: 80%;
         }
-        // .vjs-matrix .vjs-big-play-button {
-        //     border-color: #00ff00;
-        // }
-        // .vjs-matrix .vjs-volume-level,
-        // .vjs-matrix .vjs-play-progress,
-        // .vjs-matrix .vjs-slider-bar {
-        //     background: #00ff00;
-        // }
+    }
+    .vjs-poster {
+        background: url('img/about-us/about-us-video-preview.jpg');
+    }
+    .video-js .vjs-big-play-button {
+        background-color: transparent;
+        border: none;
+        background: url('img/about-us/about-us-video-play.svg');
+        height: 99px;
+        width: 99px;
+        .vjs-icon-placeholder {
+            &::before{
+                content: '';
+            }
+        }
     }
 }
