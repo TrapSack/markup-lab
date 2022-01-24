@@ -7,6 +7,9 @@
     @media screen and (max-width: 412px) {
         height: 1200px;
     }
+    @media screen and (max-width: 812px) {
+        height: 1200px;
+    }
     .reviews-title {
         margin-top: 50px;
         display: flex;
@@ -32,6 +35,11 @@
         justify-content: space-between;
         @media screen and (max-width: 412px) {
             height: 800px;
+            flex-direction: column;
+        }
+        @media screen and (max-width: 812px) {
+            align-items: center;
+            height: 1200px;
             flex-direction: column;
         }
     }
