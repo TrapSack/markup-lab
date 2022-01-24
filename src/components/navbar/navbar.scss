@@ -7,7 +7,7 @@ $text-color: #252b42;
 .header-section {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 1440px;
     position: fixed;
     color: white;
@@ -15,7 +15,7 @@ $text-color: #252b42;
     > .company-name {
         font-size: 24px;
         font-weight: bold;
-        margin-left: 2%;
+        margin-left: 18%;
     }
     @media screen and(max-width:412px) {
         width: 100%;
@@ -34,14 +34,16 @@ $text-color: #252b42;
         align-items: center;
         justify-content: center;
         color: $light-text-color;
-
+        margin-right: 18%;
         .navbar-links {
             display: flex;
-            justify-content: space-between;
-            width: 338px;
+            justify-content: space-around;
+            align-items: center;
+            width: 458px;
         }
 
         a {
+            font-weight: 600;
             color: white;
             text-decoration: none;
             font-size: 14px;
@@ -50,6 +52,7 @@ $text-color: #252b42;
             }
         }
         .link-container {
+            list-style: none;
             font-weight: bold;
             font-size: 14px;
             width: 300px;
@@ -72,7 +75,7 @@ $text-color: #252b42;
             width: 16px;
         }
         .btn-container-desktop {
-            margin-left: 20px;
+            margin-left:px;
             display: flex;
             width: 60px;
             justify-content: space-between;
