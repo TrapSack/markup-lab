@@ -8,7 +8,7 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: hidden; /* Enable scroll if needed */
     background-color: rgb(0, 0, 0); /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
     transition: 2s ease-in;
@@ -24,44 +24,72 @@
     padding: 20px;
     height: 100%;
     border: 1px solid #888;
-    width: 100%; 
+    width: 100%;
     transition: 2s ease-in;
-}
-.search-input-mobile {
-    font-weight: bold;
-    width: 80%;
-    height: 80%;
-    border-radius: 5px;
-    border: 1px solid #bdbdbd;
-    padding: 11px 21px;
 }
 
 /* The Close Button */
-.close-mobile {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
 
-.close-mobile:hover,
-.close-mobile:focus {
+.search-form-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     color: black;
-    text-decoration: none;
-    cursor: pointer;
+    .search-form-title-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        .modal-title {
+            font-weight: 600;
+            color: black;
+            margin: 0;
+        }
+        .modal-close-button {
+            background: none;
+            border: none;
+            font-weight: bold;
+            font-size: 26px;
+            &:hover {
+                color: #bdbdbd;
+            }
+        }
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding: 5px;
+        .search-input-mobile {
+            border: 1px solid #737373;
+            border-radius: 5px;
+            padding: 10px;
+            height: 20px;
+            width: 90%;
+            &:focus {
+                outline: none;
+            }
+        }
+        .search-submit-mobile {
+            margin-top: 20px;
+            background: #ff7b47;
+            color: white;
+            border: none;
+            height: 50px;
+            width: 200px;
+            border-radius: 5px;
+            padding: 15px, 40px;
+            &:hover {
+                background: #ffb654;
+                transition: 0.2s ease-in;
+            }
+        }
+    }
 }
 
-.search-submit-mobile {
-    margin-top: 20px;
-    background: #ff7b47;
-    color: white;
-    border: none;
-    height: 58px;
-    width: 240px;
-    border-radius: 5px;
-    padding: 15px, 40px;
-    &:hover {
-        background: #ffb654;
-        transition: 0.2s ease-in;
-    }
+.search-form-title-mobile {
+    display: flex;
 }

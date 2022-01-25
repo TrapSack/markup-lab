@@ -12,6 +12,7 @@ $text-color: #252b42;
     position: fixed;
     color: white;
     height: 60px;
+    z-index: 1000;
     > .company-name {
         font-size: 24px;
         font-weight: bold;
@@ -76,7 +77,7 @@ $text-color: #252b42;
             width: 16px;
         }
         .btn-container-desktop {
-            margin-left:px;
+            margin-left: px;
             display: flex;
             width: 60px;
             justify-content: space-between;
@@ -99,7 +100,7 @@ $text-color: #252b42;
 .header-transparent {
     background-color: transparent;
     transition: 0.2s ease-in;
-    @media screen and (max-width:412px) {
-        background-color: #252b42
+    @media screen and (max-width: 412px) {
+        background-color: #252b42;
     }
 }

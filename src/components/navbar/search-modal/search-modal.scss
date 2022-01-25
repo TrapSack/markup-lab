@@ -1,4 +1,10 @@
 /* The Modal (background) */
+$primary-color: #ff7b47;
+$secondary-color: #ffb654;
+$muted-color: #bdbdbd;
+$second-text-color: #737373;
+$light-text-color: #ffffff;
+$text-color: #252b42;
 .modal {
     display: none;
     visibility: visible; /* Hidden by default */
@@ -24,7 +30,8 @@
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    height: 150px;
+    height: 100px;
+    max-height: 200px;
     border: 1px solid #888;
     border-radius: 5px;
     width: 40%; /* Could be more or less, depending on screen size */
@@ -40,7 +47,12 @@
     .search-form-title {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         width: 100%;
+        margin-bottom: 30px;
+        > h3 {
+            margin: 0;
+        }
         .modal-close-button {
             background: none;
             border: none;
@@ -55,6 +67,7 @@
         display: flex;
         justify-content: space-between;
         border: 1px solid #bdbdbd;
+        border-radius: 5px;
         padding: 5px;
         .search-input {
             padding: 10px;
@@ -69,11 +82,11 @@
     .search-submit {
         background: url('img/navbar/modal-search-icon.svg');
         border: none;
-        height: 30px;
-        width: 30px;
-
+        height: 33px;
+        width: 33px;
+        cursor: pointer;
         &:hover {
-            // background: #ffb654;
+            background: url('img/navbar/modal-search-icon-light.svg');
             transition: 0.2s ease-in;
         }
     }

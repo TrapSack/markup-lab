@@ -25,7 +25,7 @@
         }
     }
     .vjs-poster {
-        background: url('img/about-us/about-us-video-preview.jpg');
+        background: url('img/about-us/about-us-video-preview.webp');
     }
     .video-js .vjs-big-play-button {
         background-color: transparent;
@@ -34,7 +34,7 @@
         height: 99px;
         width: 99px;
         .vjs-icon-placeholder {
-            &::before{
+            &::before {
                 content: '';
             }
         }

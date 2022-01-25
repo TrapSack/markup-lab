@@ -37,32 +37,33 @@ $text-color: #252b42;
             justify-content: space-between;
             align-items: center;
             width: 15%;
+
             @media screen and (max-width: 412px) {
                 width: 55%;
+            }
+            .social-media-element {
+                font-size: 1px;
+                color: transparent;
             }
             #facebook {
                 background: url('img/footer/facebook.svg');
                 height: 24px;
                 width: 24px;
-                color: #335bf5;
             }
             #insta {
                 background: url('img/footer/insta.svg');
                 height: 24px;
                 width: 24px;
-                fill: #335bf5;
             }
             #twitter {
                 background: url('img/footer/twitter.svg');
                 height: 20px;
                 width: 24px;
-                color: #335bf5;
             }
             #youtube {
                 background: url('img/footer/youtube.svg');
                 height: 18px;
                 width: 25px;
-                color: #335bf5;
             }
         }
     }

@@ -1,13 +1,14 @@
 import './components/styles.scss'
-
+// eslint-disable-next-line no-unused-vars
+import videojs from 'video.js'
 
 const environmentalBenefitLogo = require('./components/img/client-significance/environmental-benefit-logo.svg')
 const saveMoneyLogo = require('./components/img/client-significance/save-money.svg')
 const travelAndAviationLogo = require('./components/img/client-significance/travel.svg')
-const reviewerPhoto1 = require('./components/img/review-section/reviewer1.png')
-const workerPhoto1 = require('./components/img/our-team/worker-photo1.png')
-const workerPhoto2 = require('./components/img/our-team/worker-photo2.png')
-const workerPhoto3 = require('./components/img/our-team/worker-photo3.png')
+const reviewerPhoto1 = require('./components/img/review-section/reviewer1.webp')
+const workerPhoto1 = require('./components/img/our-team/worker-photo1.webp')
+const workerPhoto2 = require('./components/img/our-team/worker-photo2.webp')
+const workerPhoto3 = require('./components/img/our-team/worker-photo3.webp')
 
 const headerTemplate = require('./components/navbar/header.handlebars')
 const appointmentSectionTemplate = require('./components/appointment-section/appointment-section.handlebars')
@@ -19,7 +20,6 @@ const contactUsTemplate = require('./components/contact-us/contact-us-section.ha
 const footerSectionTemplate = require('./components/footer/footer-section.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
-
     function putTemplateInDOM(template, tag, className, options = {}) {
         const temp = document.createElement(tag)
         temp.innerHTML = template(options)
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'contact-form': '',
     })
 
-    putTemplateInDOM(footerSectionTemplate, 'section', 'footer-section', {
+    putTemplateInDOM(footerSectionTemplate, 'footer', 'footer-section', {
         linkColArray: [
             {
                 colName: 'Company Info',
