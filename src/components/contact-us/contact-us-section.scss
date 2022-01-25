@@ -24,7 +24,7 @@ $text-color: #252b42;
         color: $light-text-color;
         font-weight: bold;
         @media screen and (max-width: 412px) {
-            margin-left: 14%;
+            margin-left: 70px;
             align-items: flex-start;
         }
         .upper-title-text {
@@ -76,7 +76,7 @@ $text-color: #252b42;
                     outline: none;
                 }
                 @media screen and (max-width: 613px) {
-                    width: 60%;
+                    width: 55%;
                 }
                 &::placeholder {
                     color: $muted-color;
@@ -96,7 +96,7 @@ $text-color: #252b42;
                     outline: none;
                 }
                 @media screen and (max-width: 613px) {
-                    width: 70.5%;
+                    width: 65.5%;
                 }
             }
         }
@@ -111,15 +111,16 @@ $text-color: #252b42;
             background: #f9f9f9;
             border-radius: 5px;
             &::placeholder {
-                font-weight: bold;
+                font-size: 16px;
+                font-weight: 500;
                 color: $muted-color;
             }
             &:focus {
                 outline: none;
             }
             @media screen and (max-width: 612px) {
-                min-width: 247px;
-                max-width: 247px;
+                min-width: 227px;
+                max-width: 227px;
                 min-height: 100px;
                 max-height: 100px;
             }
@@ -140,7 +141,7 @@ $text-color: #252b42;
                 transition: 0.2s ease-in;
             }
             @media screen and (max-width: 612px) {
-                width: 285px;
+                width: 265px;
             }
         }
     }

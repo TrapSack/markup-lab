@@ -103,7 +103,7 @@ $text-color: #252b42;
         .subscription {
             width: 30%;
             @media screen and (max-width: 412px) {
-                width: 70%;
+                width: 100%;
             }
             .subscription-title {
                 color: white;
@@ -116,14 +116,22 @@ $text-color: #252b42;
             .subscription-email {
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 background: #fff;
                 height: 60px;
                 border-radius: 5px;
+                border: 1px solid #bdbdbd;
+                @media screen and (max-width: 412px) {
+                    height: 50px;
+                }
                 .email-input {
-                    width: 55%;
+                    width: 65%;
                     height: 50%;
-                    padding: 15px;
+                    padding: 10px;
                     border: none;
+                    @media screen and (max-width: 412px) {
+                        width: 330px;
+                    }
                     border-radius: 5px 0 0 5px;
                     &:focus {
                         outline: none;
@@ -137,7 +145,7 @@ $text-color: #252b42;
                 .submit-email-btn {
                     height: 100%;
                     font-weight: 400;
-                    width: 45%;
+                    width: 35%;
                     border: none;
                     letter-spacing: 1px;
                     background: $primary-color;
@@ -146,6 +154,11 @@ $text-color: #252b42;
                     font-size: 14px;
                     &:hover {
                         background: $secondary-color;
+                    }
+                    @media screen and (max-width: 412px) {
+                        width: 75%;
+                        font-size: 14px;
+                        font-weight: normal;
                     }
                 }
             }
