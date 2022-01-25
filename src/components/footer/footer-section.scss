@@ -131,7 +131,7 @@ $text-color: #252b42;
                     padding: 10px;
                     border: none;
                     @media screen and (max-width: 412px) {
-                        width: 330px;
+                        width: 70%;
                     }
                     border-radius: 5px 0 0 5px;
                     &:focus {
@@ -157,7 +157,7 @@ $text-color: #252b42;
                         background: $secondary-color;
                     }
                     @media screen and (max-width: 412px) {
-                        width: 75%;
+                        width: 30%;
                         font-size: 14px;
                         font-weight: normal;
                     }
