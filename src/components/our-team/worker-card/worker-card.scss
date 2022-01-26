@@ -5,7 +5,7 @@ $second-text-color: #737373;
 $light-text-color: #ffffff;
 $text-color: #252b42;
 
-.worker-card {
+.worker-cards-container__worker-card {
     height: 373px;
     width: 328px;
     background: #fff;
@@ -19,7 +19,7 @@ $text-color: #252b42;
         font-weight: bold;
         font-size: 16px;
     }
-    .worker-info {
+    .worker-card__worker-info {
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -26,7 +26,7 @@ $text-color: #252b42;
     }
 }
 
-.quote-getting-container {
+.quote-getting {
     margin-right: 200px;
     width: 400px;
     color: white;
@@ -88,7 +88,7 @@ $text-color: #252b42;
             font-weight: 5000;
             font-size: 40px;
         }
-        .button-field {
+        .quote-getting__button-field {
             display: flex;
             flex-direction: column;
             align-items: center;
