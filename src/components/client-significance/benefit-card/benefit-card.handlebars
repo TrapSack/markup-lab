@@ -1,12 +1,10 @@
-<div class='benefit-card'>
-    <div class='benefit-card-header'>
-        {{!-- remove header to sum tag h3 h4 --}}
-        <div class='benefit-card-header-logo' style="background: url({{backgroundURL}});">
+<div class='benefits-container__benefit-card'>
+    <div class='benefit-card__header'>
+        <div class='benefit-card__logo' style="background: url({{backgroundURL}});">
         </div>
-        <h3 class='benefit-card-header-title'>{{headerTitle}}</h3>
+        <h3 class='benefit-card__title'>{{headerTitle}}</h3>
     </div>
-    <ul class='benefit-description'>
-        {{!-- pseudoelemets --}}
+    <ul class='benefit-card__desctiption'>
         {{#each benefits}}
         <li>{{this}}</li>
         {{/each}}

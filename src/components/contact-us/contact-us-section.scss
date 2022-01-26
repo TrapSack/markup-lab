@@ -11,14 +11,14 @@ $text-color: #252b42;
     min-height: 821px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('./components/img/contact-us/cover.webp');
+        url('./img/contact-us/cover.webp');
     background-size: cover;
     @media screen and (max-width: 820px) {
         align-items: center;
         min-height: 1000px;
         background-size: 1148px;
     }
-    .contact-form-title {
+    .contact-us__title{
         display: flex;
         flex-direction: column;
         margin: 90px 0 40px 220px;
@@ -28,17 +28,17 @@ $text-color: #252b42;
             margin-left: 16.7%;
             align-items: flex-start;
         }
-        .upper-title-text {
+        .contact-us__title-text {
             font-weight: normal;
             font-size: 16px;
             margin: 0;
         }
-        .main-title-text {
+        .contact-us__main-title-text {
             margin: 0;
             font-size: 40px;
         }
     }
-    .contact-us-form {
+    .contact-form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -65,7 +65,7 @@ $text-color: #252b42;
                 flex-wrap: nowrap;
                 height: 250px;
             }
-            .booking-option-input {
+            .contact-form__input {
                 font-weight: bold;
                 width: 242px;
                 height: 28px;
@@ -85,7 +85,7 @@ $text-color: #252b42;
                 }
             }
 
-            .booking-option-select {
+            .contact-form__select{
                 width: 286px;
                 height: 50px;
                 padding: 0 20px;
@@ -103,7 +103,7 @@ $text-color: #252b42;
                 }
             }
         }
-        .contact-message {
+        .contact-form__message {
             margin-top: 20px;
             min-width: 561px;
             max-width: 561px;
@@ -129,7 +129,7 @@ $text-color: #252b42;
             }
         }
 
-        .appointment-submit-btn {
+        .contact-form__submit-btn{
             margin-top: 40px;
             background: $primary-color;
             color: white;
@@ -164,7 +164,7 @@ $text-color: #252b42;
             justify-content: space-around;
             height: 300px;
         }
-        .bottom-title {
+        .contact-us-bottom__title {
             margin-left: 215px;
             @media screen and (max-width: 820px) {
                 margin-left: 20px;
@@ -172,11 +172,11 @@ $text-color: #252b42;
                 width: 298px;
             }
         }
-        .bottom-title-main {
+        .contact-us-bottom__main {
             width: 268px;
         }
 
-        .bottom-title-text {
+        .contact-us-bottom__text {
             color: #737373;
             font-weight: 500;
             @media screen and (max-width: 820px) {
@@ -185,7 +185,7 @@ $text-color: #252b42;
             }
         }
 
-        .contact-btn {
+        .contact-us-bottom__contact-btn {
             background: $primary-color;
             color: $light-text-color;
             border: none;

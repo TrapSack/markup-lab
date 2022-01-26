@@ -14,7 +14,7 @@
         min-height: 900px;
     }
 
-    .about-us-video {
+    .about-us-section__video {
         background-size: 1100px;
         height: 400px;
         width: 50%;
@@ -26,12 +26,12 @@
         }
     }
     .vjs-poster {
-        background: url('./components/img/about-us/about-us-video-preview.webp');
+        background: url('./img/about-us/about-us-video-preview.webp');
     }
     .video-js .vjs-big-play-button {
         background-color: transparent;
         border: none;
-        background: url('./components/img/about-us/about-us-video-play.svg');
+        background: url('./img/about-us/about-us-video-play.svg');
         height: 99px;
         width: 99px;
         .vjs-icon-placeholder {

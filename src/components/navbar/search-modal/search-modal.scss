@@ -44,16 +44,16 @@ $text-color: #252b42;
     width: 100%;
     height: 100%;
     color: black;
-    .search-form-title {
+    .search-form-header {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
         margin-bottom: 20px;
-        > h3 {
+        >.search-form-header__text {
             margin: 0;
         }
-        .modal-close-button {
+        .search-form-header__close-button {
             background: none;
             border: none;
             font-weight: bold;
@@ -69,7 +69,7 @@ $text-color: #252b42;
         border: 1px solid #bdbdbd;
         border-radius: 5px;
         padding: 5px;
-        .search-input {
+        .input-container__field {
             padding: 10px;
             height: 10px;
             width: 80%;
@@ -79,14 +79,14 @@ $text-color: #252b42;
             }
         }
     }
-    .search-submit {
-        background: url('./components/img/navbar/modal-search-icon.svg');
+    .input-container__submit {
+        background: url('./img/navbar/modal-search-icon.svg');
         border: none;
         height: 30px;
         width: 30px;
         cursor: pointer;
         &:hover {
-            background: url('./components/img/navbar/modal-search-icon-light.svg');
+            background: url('./img/navbar/modal-search-icon-light.svg');
             transition: 0.2s ease-in;
         }
     }

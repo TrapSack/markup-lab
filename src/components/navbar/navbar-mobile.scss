@@ -27,26 +27,26 @@ $text-color: #252b42;
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            .search-button-mobile {
-                background: url('./components/img/navbar/search-icon-big.svg');
+            .btn-container-mobile__search-button_big {
+                background: url('./img/navbar/search-icon-big.svg');
                 height: 24px;
                 width: 24px;
                 border: none;
             }
-            .card-link-mobile {
-                background: url('./components/img/navbar/card-icon-big.svg');
+            .btn-container-mobile__card-link_big {
+                background: url('./img/navbar/card-icon-big.svg');
                 width: 24px;
                 height: 23px;
             }
-            .menu-button {
-                background: url('./components/img/navbar/menu-icon-small.svg');
+            .btn-container-mobile__menu-button {
+                background: url('./img/navbar/menu-icon-small.svg');
                 width: 24px;
                 height: 14px;
                 border: none;
             }
         }
     }
-    .link-container {
+    .links-container_mobile {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -61,7 +61,7 @@ $text-color: #252b42;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        a {
+        .links-container_mobile__ref {
             color: $light-text-color;
             text-decoration: none;
             font-weight: 700;

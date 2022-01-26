@@ -4,7 +4,7 @@ $muted-color: #bdbdbd;
 $second-text-color: #737373;
 $light-text-color: #ffffff;
 $text-color: #252b42;
-.header-section {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,7 +13,7 @@ $text-color: #252b42;
     color: white;
     height: 60px;
     z-index: 1000;
-    > .company-name {
+    > .header__title {
         color: $light-text-color;
         text-decoration: none;
         font-size: 24px;
@@ -25,7 +25,7 @@ $text-color: #252b42;
         height: auto;
         min-height: 60px;
         background-color: #252b42;
-        > .company-name {
+        > .header__title {
             margin: 0;
         }
         justify-content: space-around;
@@ -46,45 +46,44 @@ $text-color: #252b42;
             width: 458px;
         }
 
-        a {
-            font-weight: 600;
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-            &:hover {
-                color: $muted-color;
-            }
-        }
-        .link-container {
+        .links-container {
             list-style: none;
             font-weight: bold;
             font-size: 14px;
             width: 300px;
             display: flex;
             justify-content: space-between;
+            .links-container__ref {
+                font-weight: 600;
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+                &:hover {
+                    color: $muted-color;
+                }
+            }
         }
 
-        .search-button {
-            background: url('./components/img/navbar/search-icon-small.svg');
-            height: 16px;
-            width: 16px;
-            border: none;
-            margin-right: 5px;
-            cursor: pointer;
-        }
-
-        .card-link {
-            background: url('./components/img/navbar/card-icon-small.svg');
-            height: 15px;
-            width: 16px;
-        }
-        .btn-container-desktop {
-            margin-left: px;
+        .btn-container {
             display: flex;
             width: 60px;
             justify-content: space-between;
             @media screen and (max-width: 820px) {
                 display: none;
+            }
+            .btn-container__search-button_small {
+                background: url('./img/navbar/search-icon-small.svg');
+                height: 16px;
+                width: 16px;
+                border: none;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+    
+            .btn-container__card-link_small {
+                background: url('./img/navbar/card-icon-small.svg');
+                height: 15px;
+                width: 16px;
             }
         }
         .menu-button {
@@ -95,12 +94,12 @@ $text-color: #252b42;
         }
     }
 }
-.header-colored {
+.header_colored {
     background-color: #252b42;
     border-bottom: 1px solid $muted-color;
     transition: 0.2s ease-in;
 }
-.header-transparent {
+.header_transparent {
     background-color: transparent;
     transition: 0.2s ease-in;
     @media screen and (max-width: 820px) {

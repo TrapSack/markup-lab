@@ -2,13 +2,13 @@ import './styles.scss'
 // eslint-disable-next-line no-unused-vars
 import videojs from 'video.js'
 
-const environmentalBenefitLogo = require('./components/img/client-significance/environmental-benefit-logo.svg')
-const saveMoneyLogo = require('./components/img/client-significance/save-money.svg')
-const travelAndAviationLogo = require('./components/img/client-significance/travel.svg')
-const reviewerPhoto1 = require('./components/img/review-section/reviewer1.webp')
-const workerPhoto1 = require('./components/img/our-team/worker-photo1.webp')
-const workerPhoto2 = require('./components/img/our-team/worker-photo2.webp')
-const workerPhoto3 = require('./components/img/our-team/worker-photo3.webp')
+const environmentalBenefitLogo = require('./img/client-significance/environmental-benefit-logo.svg')
+const saveMoneyLogo = require('./img/client-significance/save-money.svg')
+const travelAndAviationLogo = require('./img/client-significance/travel.svg')
+const reviewerPhoto1 = require('./img/review-section/reviewer1.webp')
+const workerPhoto1 = require('./img/our-team/worker-photo1.webp')
+const workerPhoto2 = require('./img/our-team/worker-photo2.webp')
+const workerPhoto3 = require('./img/our-team/worker-photo3.webp')
 
 const headerTemplate = require('./components/navbar/header.handlebars')
 const appointmentSectionTemplate = require('./components/appointment-section/appointment-section.handlebars')
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(temp)
     }
 
-    putTemplateInDOM(headerTemplate, 'header', 'header-section', {
+    putTemplateInDOM(headerTemplate, 'header', 'header', {
         'navbar-links': {},
         'search-modal': {},
     })
@@ -178,16 +178,16 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     window.onscroll = function navBackgroundOnScroll() {
-        const nav = document.querySelector('.header-section')
+        const nav = document.querySelector('.header')
         if (
             document.body.scrollTop >= 50 ||
             document.documentElement.scrollTop >= 50
         ) {
-            nav.classList.add('header-colored')
-            nav.classList.remove('header-transparent')
+            nav.classList.add('header_colored')
+            nav.classList.remove('header_transparent')
         } else {
-            nav.classList.add('header-transparent')
-            nav.classList.remove('header-colored')
+            nav.classList.add('header_transparent')
+            nav.classList.remove('header_colored')
         }
     }
 

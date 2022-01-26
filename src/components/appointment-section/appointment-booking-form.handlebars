@@ -1,44 +1,44 @@
 <form class='appointment-booking-form'>
     <h2>Book Appointment</h2>
-        <div class='booking-option'>
+        <div class='appointment-booking-form__option'>
             {{!-- Label --}}
-            <label class='booking-option-text'>Name*</label>
+            <label class='appointment-booking-form__option-label'>Name*</label>
             <br>
             <input
                 type='text'
-                class='booking-option-input'
+                class='appointment-booking-form__input-field'
                 placeholder='Full Name'
             />
         </div>
-        <div class='booking-option'>
+        <div class='appointment-booking-form__option'>
             {{!-- type = email complete --}}
-            <label class='booking-option-text'>Email*</label>
+            <label class='appointment-booking-form__option-label'>Email*</label>
             <br>
             <input
                 type='email' required
-                class='booking-option-input'
+                class='appointment-booking-form__input-field'
                 placeholder='example@gmail.com'
             />
         </div>
-        <div class='booking-option'>
-            <label class='booking-option-text'>Department*</label>
+        <div class='appointment-booking-form__option'>
+            <label class='appointment-booking-form__option-label'>Department*</label>
             <br>
             <select
                 type='text'
-                class='booking-option-select'
+                class='appointment-booking-form__select'
                 placeholder='example@gmail.com'
             >
             <option value="" disabled selected class="select-placeholder">Please, select</option>
             </select>
         </div>
-        <div class='booking-option'>
-            <label class='booking-option-text'>Time*</label>
+        <div class='appointment-booking-form__option'>
+            <label class='appointment-booking-form__option-label'>Time*</label>
             <br>
             <select
                 type='text'
-                class='booking-option-select'
+                class='appointment-booking-form__select'
                 placeholder='example@gmail.com'
             /> <option value="" disabled selected   class="select-placeholder">4:00, Aviable</option></select>
     </div>
-    <button type='submit' class="appointment-submit-btn">Book Appointment</button>
+    <button type='submit' class="appointment-booking-form__submit">Book Appointment</button>
 </form>

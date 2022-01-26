@@ -8,23 +8,6 @@
     @media screen and (max-width: 412px) {
         min-height: 1600px;
     }
-    .our-team-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        color: white;
-        font-weight: bold;
-        .our-team-title-text {
-            font-size: 40px;
-        }
-        .our-team-title-description {
-            text-align: center;
-            font-size: 14px;
-            width: 70%;
-            text-decoration: none;
-        }
-    }
     .worker-cards-container {
         display: flex;
         justify-content: space-between;

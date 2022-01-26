@@ -10,10 +10,14 @@ $text-color: #252b42;
     width: 328px;
     background: #fff;
     margin: 30px 0 30px 0;
-    .worker-photo {
+    .worker-card__worker-photo {
         width: 100%;
         height: 60%;
         background-size: contain;
+    }
+    .worker-card__worker-name {
+        font-weight: bold;
+        font-size: 16px;
     }
     .worker-info {
         display: flex;
@@ -26,12 +30,12 @@ $text-color: #252b42;
             color: $second-text-color;
         }
     }
-    .worker-contacts {
+    .worker-card__worker-contacts {
         display: flex;
         height: 30px;
         width: 102px;
         justify-content: space-between;
-        .worker-contact {
+        .worker-card__worker-contact {
             height: 24px;
             width: 24px;
             text-decoration: none;
@@ -39,13 +43,13 @@ $text-color: #252b42;
             font-size: 4px;
         }
         #facebook {
-            background: url('./components/img/our-team/contact-logos/facebook.svg');
+            background: url('./img/our-team/contact-logos/facebook.svg');
         }
         #insta {
-            background: url('./components/img/our-team/contact-logos/insta.svg');
+            background: url('./img/our-team/contact-logos/insta.svg');
         }
         #twitter {
-            background: url('./components/img/our-team/contact-logos/twitter.svg');
+            background: url('./img/our-team/contact-logos/twitter.svg');
             height: 20px;
         }
     }

@@ -5,33 +5,6 @@
     min-height: 732px;
     width: 100%;
     background: #252b42;
-    .significance-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-        padding-top: 80px;
-        color: white;
-        height: 103px;
-        .significance-title-text {
-            font-size: 40px;
-            @media screen and (max-width: 820px) {
-                text-align: center;
-            }
-        }
-        .significance-title-description {
-            width: 470px;
-            font-size: 14px;
-            text-align: center;
-            @media screen and (max-width: 820px) {
-                width: 80%;
-            }
-        }
-        @media screen and (max-width: 820px) {
-            width: 80%;
-            margin-bottom: 40px;
-        }
-    }
     .benefits-container {
         display: flex;
         justify-content: space-between;

@@ -1,10 +1,6 @@
 <div class="useful-links-col">
-    <h4 class="container-title">{{colName}}</h4>
-    {{!-- <a href="#" class="link-element">About Us</a>
-    <a href="#" class="link-element">Carrier</a>
-    <a href="#" class="link-element">We are hiring</a>
-    <a href="#" class="link-element">Blog</a> --}}
+    <h4 class="useful-links-col__title">{{colName}}</h4>
     {{#each linkElements}}
-        <a href="#" class="link-element">{{this}}</a>
+        <a href="#" class="useful-links-col__ref" aria-label="{{this}}">{{this}}</a>
     {{/each}}
 </div>
