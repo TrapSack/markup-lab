@@ -6,10 +6,10 @@
     align-items: center;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.5) 50%,
+        rgb(26, 26, 49) 50%,
         rgba(37, 43, 66, 1) 50%
     );
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 820px) {
         min-height: 900px;
     }
 
@@ -20,17 +20,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        @media screen and (max-width: 412px) {
+        @media screen and (max-width: 820px) {
             width: 80%;
         }
     }
     .vjs-poster {
-        background: url('img/about-us/about-us-video-preview.webp');
+        background: url('./components/img/about-us/about-us-video-preview.webp');
     }
     .video-js .vjs-big-play-button {
         background-color: transparent;
         border: none;
-        background: url('img/about-us/about-us-video-play.svg');
+        background: url('./components/img/about-us/about-us-video-play.svg');
         height: 99px;
         width: 99px;
         .vjs-icon-placeholder {

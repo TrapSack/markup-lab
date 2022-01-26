@@ -8,8 +8,8 @@ $text-color: #252b42;
 .navbar-mobile {
     display: none;
     flex-direction: column;
-    width: 100%;
-    @media screen and (max-width: 412px) {
+    width: 30%;
+    @media screen and (max-width: 820px) {
         display: flex;
     }
     .top-menu-wrapper {
@@ -26,21 +26,20 @@ $text-color: #252b42;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 32%;
-            margin-right: 20px;
+            width: 100%;
             .search-button-mobile {
-                background: url('img/navbar/search-icon-big.svg');
+                background: url('./components/img/navbar/search-icon-big.svg');
                 height: 24px;
                 width: 24px;
                 border: none;
             }
             .card-link-mobile {
-                background: url('img/navbar/card-icon-big.svg');
+                background: url('./components/img/navbar/card-icon-big.svg');
                 width: 24px;
                 height: 23px;
             }
             .menu-button {
-                background: url('img/navbar/menu-icon-small.svg');
+                background: url('./components/img/navbar/menu-icon-small.svg');
                 width: 24px;
                 height: 14px;
                 border: none;
@@ -50,11 +49,18 @@ $text-color: #252b42;
     .link-container {
         display: none;
         flex-direction: column;
+        position: absolute;
         justify-content: space-between;
         align-items: center;
         color: $light-text-color;
         height: 250px;
-        padding-bottom: 50px;
+        width: 100%;
+        margin-top: 40px;
+        background: $text-color;
+        padding: 20px 0 50px 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
         a {
             color: $light-text-color;
             text-decoration: none;

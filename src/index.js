@@ -1,4 +1,4 @@
-import './components/styles.scss'
+import './styles.scss'
 // eslint-disable-next-line no-unused-vars
 import videojs from 'video.js'
 

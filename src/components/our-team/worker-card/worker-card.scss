@@ -28,17 +28,17 @@
             font-size: 4px;
         }
         #facebook {
-            background: url('img/our-team/contact-logos/facebook.svg');
+            background: url('./components/img/our-team/contact-logos/facebook.svg');
         }
         #insta {
-            background: url('img/our-team/contact-logos/insta.svg');
+            background: url('./components/img/our-team/contact-logos/insta.svg');
         }
         #twitter {
-            background: url('img/our-team/contact-logos/twitter.svg');
+            background: url('./components/img/our-team/contact-logos/twitter.svg');
             height: 20px;
         }
     }
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 820px) {
         width: 100%;
     }
 }

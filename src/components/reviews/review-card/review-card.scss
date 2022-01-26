@@ -1,13 +1,19 @@
 .review-card {
+    display: block;
     height: 182px;
     width: 287px;
     border-radius: 5px;
     background: #fff;
     padding: 32px;
     margin-top: 30px;
-    @media screen and (max-width: 412px) {
-        width: 268px;
-        height: 180px;
+    cursor: pointer;
+    &:hover {
+        transition: 0.2s ease-in;
+        background: #e6e6e6;
+    }
+    @media screen and (max-width: 820px) {
+        width: 70%;
+        height: 200px;
     }
     .review-rating {
         height: 50px;
@@ -16,7 +22,7 @@
         .rating-stars {
             height: 22px;
             width: 110px;
-            background: url('img/review-section/stars.svg');
+            background: url('./components/img/review-section/stars.svg');
         }
     }
     .review-text {
@@ -45,6 +51,7 @@
                 text-decoration: none;
             }
             .reviewer-profession {
+                font-weight: 600;
                 margin-top: 5px;
                 font-size: 14px;
             }
