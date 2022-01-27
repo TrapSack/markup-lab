@@ -15,44 +15,41 @@
         width: 70%;
         height: 200px;
     }
-
-    .review-card__rating {
-        height: 20px;
-        width: 110px;
-        margin-bottom: 40px;
-        background: url('./img/review-section/stars.svg');
-    }
-
-    .review-card__text {
-        font-size: 14px;
-        font-weight: 600;
-        color: #737373;
-    }
-    .reviewer-profile {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-        .reviewer-profile__photo {
-            height: 50px;
-            width: 50px;
-            // background: url('img/reviewer1.png');
-            background-size: contain;
-        }
-        .reviewer-info {
-            display: flex;
-            flex-direction: column;
-            margin-left: 15px;
-
-            .review-card__reviewer-name {
-                font-weight: bold;
-                color: #ff7b47;
-                text-decoration: none;
-            }
-            .review-card__reviewer-profession {
-                font-weight: 600;
-                margin-top: 5px;
-                font-size: 14px;
-            }
-        }
-    }
+}
+.review-card__rating {
+    height: 20px;
+    width: 110px;
+    margin-bottom: 40px;
+    background: url('./img/review-section/stars.svg');
+}
+.review-card__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #737373;
+}
+.reviewer-profile {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.reviewer-profile__photo {
+    height: 50px;
+    width: 50px;
+    // background: url('img/reviewer1.png');
+    background-size: contain;
+}
+.reviewer-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.review-card__reviewer-name {
+    font-weight: bold;
+    color: #ff7b47;
+    text-decoration: none;
+}
+.review-card__reviewer-profession {
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 14px;
 }

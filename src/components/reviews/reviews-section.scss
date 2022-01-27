@@ -8,36 +8,18 @@
     @media screen and (max-width: 820px) {
         min-height: 1000px;
     }
-    .reviews-title {
-        display: flex;
+}
+.review-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    @media screen and (max-width: 820px) {
+        min-height: 600px;
         flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        color: white;
-        font-weight: bold;
-        .reviews-title-text {
-            font-size: 40px;
-            text-align: center;
-        }
-        .reviews-title-description {
-            text-align: center;
-            font-size: 14px;
-            width: 70%;
-            text-decoration: none;
-        }
     }
-    .review-cards-container {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        width: 80%;
-        @media screen and (max-width: 820px) {
-            min-height: 600px;
-            flex-direction: column;
-        }
-        @media screen and (max-width: 812px) {
-            align-items: center;
-            flex-direction: column;
-        }
+    @media screen and (max-width: 812px) {
+        align-items: center;
+        flex-direction: column;
     }
 }
