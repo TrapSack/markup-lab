@@ -9,10 +9,10 @@
 @use './components/navbar/navbar-mobile';
 @use './components/navbar/navbar';
 @use './components/public/title';
-@use './components/contact-us/contact-us-section';
+@use './components/contact-us/contact-us';
 @use './components/about-us/about-us-section';
 @use './components/navbar/search-modal/search-modal';
-@use './components/footer/footer-section';
+@use './components/footer/footer';
 
 html {
     display: flex;

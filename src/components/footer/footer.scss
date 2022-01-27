@@ -5,7 +5,7 @@ $second-text-color: #737373;
 $light-text-color: #ffffff;
 $text-color: #252b42;
 
-.footer-section {
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@ $text-color: #252b42;
             @media screen and (max-width: 820px) {
                 width: 55%;
             }
-            .footer-title__social-media-element{
+            .footer-title__social-media-element {
                 font-size: 1px;
                 color: transparent;
             }
@@ -122,7 +122,7 @@ $text-color: #252b42;
                 @media screen and (max-width: 820px) {
                     height: 50px;
                 }
-                .subscription-form__email-input{
+                .subscription-form__email-input {
                     width: 65%;
                     height: 50%;
                     padding: 10px;
@@ -174,7 +174,7 @@ $text-color: #252b42;
         background: #17213c;
         font-size: 14px;
         font-weight: 600;
-        .copyright {
+        .footer-bottom__copyright {
             width: 70%;
         }
     }

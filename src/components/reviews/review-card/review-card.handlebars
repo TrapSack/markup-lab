@@ -1,17 +1,13 @@
 <div class='review-card'>
-    <div class='review-rating'>
-        <div class="review-rating__stars"></div>
-    </div>
+        <div class="review-card__rating"></div>
     <p class='review-card__text'>{{reviewText}}</p>
     <div class='reviewer-profile'>
         <div
             class='reviewer-profile__photo'
             style='background: url({{reviewer.profileURL}});background-size: cover;'
         ></div>
-        {{!--  all card is a href --}}
         <div class='reviewer-info'>
             <a href="#" class='review-card__reviewer-name'>{{reviewer.name}}</a>
-            {{!-- remove strong to span --}}
             <span class='review-card__reviewer-profession'>{{reviewer.profession}}</span> 
         </div>
     </div>

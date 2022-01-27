@@ -17,7 +17,7 @@ const aboutUsSectionTemplate = require('./components/about-us/about-us-section.h
 const reviewsSectionTemplate = require('./components/reviews/reviews-section.handlebars')
 const ourTeamSectionTemplate = require('./components/our-team/our-team-section.handlebars')
 const contactUsTemplate = require('./components/contact-us/contact-us-section.handlebars')
-const footerSectionTemplate = require('./components/footer/footer-section.handlebars')
+const footerSectionTemplate = require('./components/footer/footer.handlebars')
 
 document.addEventListener('DOMContentLoaded', () => {
     function putTemplateInDOM(template, tag, className, options = {}) {
@@ -27,23 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(temp)
     }
 
-    putTemplateInDOM(headerTemplate, 'header', 'header', {
-        'navbar-links': {},
-        'search-modal': {},
-    })
+    putTemplateInDOM(headerTemplate, 'header', 'header', {})
 
-    putTemplateInDOM(
-        appointmentSectionTemplate,
-        'section',
-        'appointment-section',
-        {
-            'appointment-booking-form': {},
-        }
-    )
+    putTemplateInDOM(appointmentSectionTemplate, 'section', 'appointment', {
+        'appointment-booking-form': {},
+    })
     putTemplateInDOM(
         clientSignificanceSectionTemplate,
         'section',
-        'client-significance-section',
+        'client-significance',
         {
             benefitCardArray: [
                 {
@@ -86,11 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     )
 
-    putTemplateInDOM(aboutUsSectionTemplate, 'section', 'about-us-section', {
+    putTemplateInDOM(aboutUsSectionTemplate, 'section', 'about-us', {
         'about-us-video': {},
     })
 
-    putTemplateInDOM(reviewsSectionTemplate, 'section', 'reviews-section', {
+    putTemplateInDOM(reviewsSectionTemplate, 'section', 'reviews', {
         reviews: [
             {
                 reviewText:
@@ -122,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
     })
 
-    putTemplateInDOM(ourTeamSectionTemplate, 'section', 'our-team-section', {
+    putTemplateInDOM(ourTeamSectionTemplate, 'section', 'our-team', {
         workers: [
             {
                 photoURL: workerPhoto1,
@@ -142,11 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
     })
 
-    putTemplateInDOM(contactUsTemplate, 'section', 'contact-us-section', {
+    putTemplateInDOM(contactUsTemplate, 'section', 'contact-us', {
         'contact-form': '',
     })
 
-    putTemplateInDOM(footerSectionTemplate, 'footer', 'footer-section', {
+    putTemplateInDOM(footerSectionTemplate, 'footer', 'footer', {
         linkColArray: [
             {
                 colName: 'Company Info',

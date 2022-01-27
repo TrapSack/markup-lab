@@ -71,7 +71,7 @@ $text-color: #252b42;
             @media screen and (max-width: 820px) {
                 display: none;
             }
-            .btn-container__search-button_small {
+            .search-button_small {
                 background: url('./img/navbar/search-icon-small.svg');
                 height: 16px;
                 width: 16px;
@@ -79,8 +79,8 @@ $text-color: #252b42;
                 margin-right: 5px;
                 cursor: pointer;
             }
-    
-            .btn-container__card-link_small {
+
+            .card-link_small {
                 background: url('./img/navbar/card-icon-small.svg');
                 height: 15px;
                 width: 16px;

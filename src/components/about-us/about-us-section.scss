@@ -1,5 +1,5 @@
 @use 'video-js';
-.about-us-section {
+.about-us {
     min-height: 759px;
     width: 100%;
     display: flex;
@@ -14,7 +14,7 @@
         min-height: 900px;
     }
 
-    .about-us-section__video {
+    .about-us__video {
         background-size: 1100px;
         height: 400px;
         width: 50%;
