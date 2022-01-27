@@ -50,10 +50,10 @@ $text-color: #252b42;
         align-items: flex-start;
         width: 100%;
         margin-bottom: 20px;
-        >.search-form-header__text {
+        &__text {
             margin: 0;
         }
-        .search-form-header__close-button {
+        &__close-button {
             background: none;
             border: none;
             font-weight: bold;
@@ -69,7 +69,7 @@ $text-color: #252b42;
         border: 1px solid #bdbdbd;
         border-radius: 5px;
         padding: 5px;
-        .input-container__field {
+        &__field {
             padding: 10px;
             height: 10px;
             width: 80%;
@@ -79,7 +79,7 @@ $text-color: #252b42;
             }
         }
     }
-    .input-container__submit {
+    &__submit {
         background: url('./img/navbar/modal-search-icon.svg');
         border: none;
         height: 30px;
