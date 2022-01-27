@@ -11,26 +11,26 @@
         margin-top: 50px;
         width: 100%;
     }
-    .benefit-card__header {
+    &__header {
         display: flex;
         align-items: center;
         height: 132px;
         width: 100%;
         justify-content: center;
-        .benefit-card__logo {
-            height: 72px;
-            width: 72px;
-            // background: url(img/environmental-benefit-logo.svg);
-        }
-
-        .benefit-card__title {
-            margin-left: 15px;
-            color: #252b42;
-            font-size: 16px;
-            font-weight: bold;
-        }
     }
-    .benefit-card__desctiption {
+    &__logo {
+        height: 72px;
+        width: 72px;
+        // background: url(img/environmental-benefit-logo.svg);
+    }
+
+    &__title {
+        margin-left: 15px;
+        color: #252b42;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__desctiption {
         list-style: none;
         padding-left: 0;
         height: 180px;

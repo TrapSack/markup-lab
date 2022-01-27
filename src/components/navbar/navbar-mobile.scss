@@ -5,60 +5,61 @@ $second-text-color: #737373;
 $light-text-color: #ffffff;
 $text-color: #252b42;
 
-.navbar-mobile {
+.navbar_mobile {
     display: none;
     flex-direction: column;
+    margin: 0;
     width: 30%;
     @media screen and (max-width: 820px) {
         display: flex;
     }
-}
-.btn-container-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-.search-button_big {
-    background: url('./img/navbar/search-icon-big.svg');
-    height: 24px;
-    width: 24px;
-    border: none;
-}
-.card-link_big {
-    background: url('./img/navbar/card-icon-big.svg');
-    width: 24px;
-    height: 23px;
-}
-.btn-container-mobile__menu-button {
-    background: url('./img/navbar/menu-icon-small.svg');
-    width: 24px;
-    height: 14px;
-    border: none;
-}
-.links-container_mobile {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-    color: $light-text-color;
-    height: 250px;
-    width: 100%;
-    margin-top: 40px;
-    background: $text-color;
-    padding: 20px 0 50px 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    &__btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__search-button_big {
+        background: url('./img/navbar/search-icon-big.svg');
+        height: 24px;
+        width: 24px;
+        border: none;
+    }
+    &__card-link_big {
+        background: url('./img/navbar/card-icon-big.svg');
+        width: 24px;
+        height: 23px;
+    }
+    &__menu-button {
+        background: url('./img/navbar/menu-icon-small.svg');
+        width: 24px;
+        height: 14px;
+        border: none;
+    }
+    &__links-container {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+        color: $light-text-color;
+        height: 250px;
+        width: 100%;
+        margin-top: 360px;
+        background: $text-color;
+        padding: 20px 0 50px 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .links-container__ref {
+        color: $light-text-color;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+    }
 }
 
 .show {
     display: flex;
-}
-.links-container_mobile__ref {
-    color: $light-text-color;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 24px;
 }

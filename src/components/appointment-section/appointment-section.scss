@@ -21,7 +21,7 @@ $text-color: #252b42;
         margin-top: 0;
         flex-direction: column;
         align-items: center;
-        height: 1500px;
+        min-height: 1300px;
         background-size: 3300px;
     }
 }
@@ -30,11 +30,11 @@ $text-color: #252b42;
     margin-right: 200px;
     width: 400px;
     color: white;
-    h1 {
+    &__main-text {
         font-weight: 5000;
         font-size: 58px;
     }
-    > span {
+    &__bottom-text {
         display: block;
         font-size: 20px;
         width: 360px;
@@ -42,7 +42,7 @@ $text-color: #252b42;
         margin-bottom: 30px;
     }
 
-    .quote-getting__get-quote-btn {
+    &__get-quote-btn {
         font-weight: 700;
         font-size: 14px;
         color: white;
@@ -58,7 +58,7 @@ $text-color: #252b42;
             transition: 0.2s ease-in;
         }
     }
-    .quote-getting__learn-more-btn {
+    &__learn-more-btn {
         background: transparent;
         width: 154px;
         height: 48px;
@@ -83,7 +83,7 @@ $text-color: #252b42;
         align-items: center;
         margin-right: 0;
         width: 80%;
-        h1 {
+        &__main-text {
             text-align: center;
             font-weight: 5000;
             font-size: 40px;
@@ -93,7 +93,7 @@ $text-color: #252b42;
             flex-direction: column;
             align-items: center;
         }
-        h4 {
+        &__bottom-text {
             text-align: center;
             width: 260px;
             font-size: 20px;
@@ -116,67 +116,64 @@ $text-color: #252b42;
     @media screen and (max-width: 820px) {
         width: 60%;
     }
-}
-.booking-form__option {
-    margin-top: 10px;
-    width: 100%;
-}
-.booking-form__option-label {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.booking-form__input-field {
-    margin-top: 15px;
-    font-weight: 600;
-    width: 202px;
-    height: 28px;
-    border-radius: 5px;
-    border: 1px solid $muted-color;
-    padding: 11px 21px;
-    background: #f9f9f9;
-    @media screen and (max-width: 820px) {
-        width: 85%;
+    &__option {
+        margin-top: 10px;
+        width: 100%;
     }
-    &::placeholder {
+    &__option-label {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    &__input-field {
+        margin-top: 15px;
+        font-weight: 600;
+        width: 202px;
+        height: 28px;
+        border-radius: 5px;
+        border: 1px solid $muted-color;
+        padding: 11px 21px;
+        background: #f9f9f9;
+        @media screen and (max-width: 820px) {
+            width: 85%;
+        }
+        &::placeholder {
+            color: $second-text-color;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__select {
+        margin-top: 15px;
+        width: 244px;
+        height: 50px;
+        padding: 0 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        border: 1px solid $muted-color;
         color: $second-text-color;
+        background: #f9f9f9;
+        @media screen and (max-width: 820px) {
+            width: 100%;
+        }
     }
-    &:focus {
-        outline: none;
-    }
-}
-.booking-form__select {
-    margin-top: 15px;
-    width: 244px;
-    height: 50px;
-    padding: 0 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    border: 1px solid $muted-color;
-    color: $second-text-color;
-    background: #f9f9f9;
-    @media screen and (max-width: 820px) {
-        width: 100%;
-    }
-}
-h2 {
-    font-weight: bold;
-}
-.booking-form__submit {
-    margin-top: 40px;
-    background: $primary-color;
-    color: white;
-    border: none;
-    height: 58px;
-    width: 240px;
-    border-radius: 5px;
-    font-weight: bold;
-    padding: 15px, 40px;
-    &:hover {
-        background: $secondary-color;
-        transition: 0.2s ease-in;
-    }
-    @media screen and (max-width: 820px) {
-        width: 100%;
+    &__submit {
+        margin-top: 40px;
+        background: $primary-color;
+        color: white;
+        border: none;
+        height: 58px;
+        width: 240px;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 15px, 40px;
+        &:hover {
+            background: $secondary-color;
+            transition: 0.2s ease-in;
+        }
+        @media screen and (max-width: 820px) {
+            width: 100%;
+        }
     }
 }

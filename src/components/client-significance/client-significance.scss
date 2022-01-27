@@ -5,7 +5,8 @@
     min-height: 732px;
     width: 100%;
     background: #252b42;
-    .benefit-cards {
+
+    &__benefit-cards {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;

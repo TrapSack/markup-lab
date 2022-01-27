@@ -1,16 +1,16 @@
+@use './components/navbar/navbar';
+@use './components/navbar/navbar-mobile';
+@use './components/public/title';
 @use './components/appointment-section/appointment-section';
+@use './components/client-significance/benefit-card/benefit-card';
+@use './components/client-significance/client-significance.scss';
+@use './components/reviews/reviews-section';
 @use './components/reviews/review-card/review-card';
 @use './components/our-team/our-team-section';
 @use './components/our-team/worker-card/worker-card';
-@use './components/reviews/reviews-section';
-@use './components/client-significance/benefit-card/benefit-card';
-@use './components/client-significance/client-significance.scss';
-@use './components/navbar/search-modal/search-modal-mobile';
-@use './components/navbar/navbar-mobile';
-@use './components/navbar/navbar';
-@use './components/public/title';
-@use './components/contact-us/contact-us';
 @use './components/about-us/about-us-section';
+@use './components/contact-us/contact-us';
+@use './components/navbar/search-modal/search-modal-mobile';
 @use './components/navbar/search-modal/search-modal';
 @use './components/footer/footer';
 

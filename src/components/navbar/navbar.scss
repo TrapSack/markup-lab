@@ -23,13 +23,26 @@ $text-color: #252b42;
         }
         justify-content: space-around;
     }
-}
-.header__title {
-    color: $light-text-color;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 18%;
+    &_colored {
+        background-color: #252b42;
+        border-bottom: 1px solid $muted-color;
+        transition: 0.2s ease-in;
+    }
+    &_transparent {
+        background-color: transparent;
+        transition: 0.2s ease-in;
+        @media screen and (max-width: 820px) {
+            background-color: #252b42;
+        }
+    }
+
+    &__title {
+        color: $light-text-color;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 18%;
+    }
 }
 .navbar {
     display: flex;
@@ -43,12 +56,40 @@ $text-color: #252b42;
     @media screen and (max-width: 820px) {
         display: none;
     }
-}
-.navbar-links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 458px;
+    .navbar-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 458px;
+        &__btn-container {
+            display: flex;
+            width: 60px;
+            justify-content: space-between;
+            @media screen and (max-width: 820px) {
+                display: none;
+            }
+        }
+        &__search-button {
+            margin-right: 5px;
+            cursor: pointer;
+            &_small {
+                background: url('./img/navbar/search-icon-small.svg');
+                height: 16px;
+                width: 16px;
+                border: none;
+            }
+        }
+        &__card-link {
+            &_small {
+                background: url('./img/navbar/card-icon-small.svg');
+                height: 15px;
+                width: 16px;
+            }
+        }
+        .menu-button {
+            display: none;
+        }
+    }
 }
 .links-container {
     list-style: none;
@@ -57,50 +98,13 @@ $text-color: #252b42;
     width: 300px;
     display: flex;
     justify-content: space-between;
-}
-.links-container__ref {
-    font-weight: 600;
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    &:hover {
-        color: $muted-color;
-    }
-}
-.btn-container {
-    display: flex;
-    width: 60px;
-    justify-content: space-between;
-    @media screen and (max-width: 820px) {
-        display: none;
-    }
-}
-.search-button_small {
-    background: url('./img/navbar/search-icon-small.svg');
-    height: 16px;
-    width: 16px;
-    border: none;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.card-link_small {
-    background: url('./img/navbar/card-icon-small.svg');
-    height: 15px;
-    width: 16px;
-}
-.menu-button {
-    display: none;
-}
-.header_colored {
-    background-color: #252b42;
-    border-bottom: 1px solid $muted-color;
-    transition: 0.2s ease-in;
-}
-.header_transparent {
-    background-color: transparent;
-    transition: 0.2s ease-in;
-    @media screen and (max-width: 820px) {
-        background-color: #252b42;
+    &__ref {
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        &:hover {
+            color: $muted-color;
+        }
     }
 }
