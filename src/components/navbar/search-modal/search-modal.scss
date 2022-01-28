@@ -44,24 +44,24 @@ $text-color: #252b42;
     width: 100%;
     height: 100%;
     color: black;
-    .search-form-header {
+    &__header {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         width: 100%;
         margin-bottom: 20px;
         align-items: center;
-        &__text {
-            font-weight: 600;
-        }
-        &__close-button {
-            background: none;
-            border: none;
-            font-weight: bold;
-            font-size: 26px;
-            &:hover {
-                color: #bdbdbd;
-            }
+    }
+    &__text {
+        font-weight: 600;
+    }
+    &__close-button {
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 26px;
+        &:hover {
+            color: #bdbdbd;
         }
     }
     .input-container {
