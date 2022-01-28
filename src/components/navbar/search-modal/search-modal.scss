@@ -50,8 +50,9 @@ $text-color: #252b42;
         align-items: flex-start;
         width: 100%;
         margin-bottom: 20px;
+        align-items: center;
         &__text {
-            margin: 0;
+            font-weight: 600;
         }
         &__close-button {
             background: none;
@@ -78,16 +79,16 @@ $text-color: #252b42;
                 outline: none;
             }
         }
-    }
-    &__submit {
-        background: url('./img/navbar/modal-search-icon.svg');
-        border: none;
-        height: 30px;
-        width: 30px;
-        cursor: pointer;
-        &:hover {
-            background: url('./img/navbar/modal-search-icon-light.svg');
-            transition: 0.2s ease-in;
+        &__submit {
+            background: url('./img/navbar/modal-search-icon.svg');
+            border: none;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+            &:hover {
+                background: url('./img/navbar/modal-search-icon-light.svg');
+                transition: 0.2s ease-in;
+            }
         }
     }
 }

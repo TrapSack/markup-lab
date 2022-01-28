@@ -172,6 +172,8 @@ $text-color: #252b42;
     }
     &__main {
         width: 268px;
+        margin: 0;
+        font-size: 24px;
         @media screen and(max-width:820px) {
             width: 70%;
         }

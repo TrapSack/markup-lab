@@ -32,6 +32,7 @@ $text-color: #252b42;
         }
     }
     &__title-text {
+        font-size: 24px;
         @media screen and (max-width: 820px) {
             margin: 60px 0 60px 0;
         }
@@ -100,11 +101,18 @@ $text-color: #252b42;
     }
 }
 .subscription {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    justify-content: space-around;
     width: 30%;
     @media screen and (max-width: 820px) {
+        margin: 0;
         width: 100%;
     }
     &__title {
+        font-size: 16px;
+        font-weight: bold;
         color: white;
     }
     &__bottom-text {
