@@ -42,6 +42,7 @@ $text-color: #252b42;
         position: absolute;
         justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid $muted-color;
         color: $light-text-color;
         height: 250px;
         width: 100%;
